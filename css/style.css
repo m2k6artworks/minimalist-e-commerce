@@ -5,10 +5,82 @@
  *
  * Made By MaterializeCSS.com
  */
+.text-bold {
+  font-weight: bolder !important;
+  font-size: 1.2em;
+}
+
+nav {
+  padding: 0 10px 0 10px;
+  background-color: var(--primary);
+  box-shadow: none;
+}
+
+nav .left {
+  margin: 0 1.5rem;
+  padding: 0;
+}
+
+nav .brand-logo {
+  position: unset;
+}
+
+/* nav .right {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+} */
+
+.nav-wrapper form {
+  margin: auto;
+  /* width: 30%; */
+}
+
+nav .input-field {
+  margin: 13px 0;
+}
+
+.nav-wrapper .search-location {
+  width: 15%;
+}
+
+.nav-wrapper .search-stuff {
+  width: 27%;
+}
+
+.nav-wrapper .search-stuff li {
+  width: 100%;
+}
+
+/* .nav-wrapper .input-field{
+  padding-top: 7px;
+} */
+
+.nav-wrapper form #search{
+  height: 35px;
+  border: 2px solid #bdbdbd;
+  border-radius: 4px;
+}
 
 .icon-block {
   padding: 0 15px;
 }
-.icon-block .material-icons {
-	font-size: inherit;
+
+.input-field .material-icons {
+  line-height: 40px;
+  height: 35px;
+}
+
+.nav-wrapper .btn-large {
+  border-radius: 70px;
+  box-shadow: none;
+  border: 2px solid #bdbdbd;
+  /* height: 45px; */
+  margin: auto;
+}
+
+.nav-wrapper .btn-large .material-icons {
+  clip-path: circle();
+  margin: 0;
+  margin-right: .7em;
 }

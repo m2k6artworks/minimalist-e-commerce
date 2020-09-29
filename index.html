@@ -11,10 +11,36 @@
   <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 </head>
 <body>
-  <nav class="light-blue lighten-1" role="navigation">
-    <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">Logo</a>
-      <ul class="right hide-on-med-and-down">
-        <li><a href="#">Navbar Link</a></li>
+  <nav class="grey lighten-5" role="navigation">
+    <div class="nav-wrapper">
+      <a id="logo-container" href="#" class="left brand-logo grey-text text-darken-4 text-bold">G</a>
+      <!-- <ul class="left hide-on-med-and-down">
+        <li><a id="logo-container" href="#" class="grey-text text-darken-4">G</a></li>
+      </ul> -->
+      <ul class="left hide-on-med-and-down search-location">
+        <li>
+        <form action="" method="post" class="location">
+          <div class="input-field">
+              <input id="search" type="search" name="search" placeholder="Cari Lokasi">
+              <label class="label-icon" for="search"><i class="material-icons">search</i></label>
+          </div>
+        </form>
+        </li>
+      </ul>
+      <ul class="left hide-on-med-and-down search-stuff">
+        <li>
+        <form action="" method="post" class="stuff">
+          <div class="input-field">
+              <input id="search" type="search" name="search" placeholder="Cari Barang">
+              <label class="label-icon" for="search"><i class="material-icons">search</i></label>
+          </div>
+        </form>
+        </li>
+      </ul>
+      <ul class="left hide-on-med-and-down">
+        <li>
+          <a class="waves-effect waves-dark btn-large grey lighten-5 grey-text text-darken-4"><i class="material-icons left grey darken-4 grey-text text-lighten-5">add</i>Jual</a>
+        </li>
       </ul>
 
       <ul id="nav-mobile" class="sidenav">
