@@ -5,19 +5,47 @@
  *
  * Made By MaterializeCSS.com
  */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+:root {
+	/*box-sizing: border-box;*/
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    --text-primary: #212121;
+    --text-secondary: #616161;
+    --bg-primary: #fafafa;
+    --bg-secondary:#eeeeee;
+    --border-primary:  #bdbdbd; 
+    --transition-speed: 600ms;
+    scroll-behavior: smooth;
+}
+
+body {
+  color: var(--text-primary);
+  background-color: var(--bg-primary);
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
 .text-bold {
   font-weight: bolder !important;
   font-size: 1.2em;
 }
 
+
+/* start nav */
+
 nav {
   padding: 0 10px 0 10px;
-  background-color: var(--primary);
+  color: var(--text-primary);
+  background-color: var(--bg-primary);
   box-shadow: none;
+  height: 1rem;
 }
 
 nav .left {
-  margin: 0 1.5rem;
+  margin: .5rem 1.5rem;
   padding: 0;
 }
 
@@ -58,7 +86,7 @@ nav .input-field {
 
 .nav-wrapper form #search{
   height: 35px;
-  border: 2px solid #bdbdbd;
+  border: 2px solid var(--border-primary);
   border-radius: 4px;
 }
 
@@ -74,7 +102,7 @@ nav .input-field {
 .nav-wrapper .btn-large {
   border-radius: 70px;
   box-shadow: none;
-  border: 2px solid #bdbdbd;
+  border: 2px solid var(--border-primary);
   /* height: 45px; */
   margin: auto;
 }
@@ -84,3 +112,37 @@ nav .input-field {
   margin: 0;
   margin-right: .7em;
 }
+
+/* end nav */
+
+
+
+/* start carousel slider */
+
+.middle-indicator {
+  position:absolute;
+  top:45%;
+}
+
+.middle-indicator-text {
+  font-size: 4.2rem;
+}
+
+a.middle-indicator-text {
+  color: var(--text-primary);
+}
+
+.content-indicator {
+  width: 64px;
+  height: 64px;
+  background: none;
+  -moz-border-radius: 50px;
+  -webkit-border-radius: 50px;
+  border-radius: 50px; 
+}
+   
+.indicators {
+  visibility: hidden;
+}
+
+/* end carousel slider */
