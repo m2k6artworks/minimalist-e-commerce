@@ -31,10 +31,10 @@ document.addEventListener('DOMContentLoaded', () => {
   })
 })
 
-// const cartBtn = qselect('.sidenav-trigger')
+// const cartBtn = qselect('.sideTriggerBtn')
 // cartBtn.addEventListener("click", event => {
-//   sideNavElems.style.width = "300px"
-//   bodyElems.style.cssText = "padding-right: 300px;"
+//   const sideNavClose = M.Carousel.getInstance(sideNavElems)
+//   sideNavClose.close();
 // })
 
 
