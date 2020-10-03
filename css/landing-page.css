@@ -1,0 +1,21 @@
+.icon-block {
+    padding: 0 15px;
+  }
+  .icon-block .material-icons {
+      font-size: inherit;
+  }
+  
+  .image-landing {
+    background-image: url("../img/567638.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .image-1 {
+    height: 70vh;
+  }
+  
+  .image-2 {
+    height: 30vh;
+  }
+  
