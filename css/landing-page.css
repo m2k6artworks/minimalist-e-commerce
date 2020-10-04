@@ -39,6 +39,15 @@
     font-size: 1.2em;
   } 
   /* start nav */
+.card-panel:hover{
+  transition: all 1s cubic-bezier(0.645, 0.045, 0.355, 1);
+  margin-top: 0;
+  box-shadow: 1px 1px 10px 0 rgba(0,0,0,.1);
+}
+
+.text-up{
+  color: #111;
+}
 
 nav {
   padding: 0 10px 0 10px;
@@ -129,6 +138,7 @@ nav .input-field {
   border-radius: 20px !important;
 }
 
+
 .rad-desc {
   border:1px solid #dcdcdc;
   border-radius: 0 0 20px 20px !important;
@@ -193,6 +203,10 @@ nav .input-field {
   color: yellow;
 }
 
+.product-price:hover {  
+    background-color: #3e8e41;
+    color: white;
+  }
 .product-price {
   position: absolute;
   background: #11e95b;
