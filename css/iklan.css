@@ -50,9 +50,34 @@ body {
 nav {
   padding: 0 10px 0 10px;
   color: var(--text-primary);
-  background-color: var(--bg-primary);
+  background: linear-gradient(60deg,#4d3b7a,#2c205c);
+  /* background-color: var(--bg-primary); */
   box-shadow: none;
-  height: 1rem;
+  height: 5rem;
+}
+
+.noHover:hover{
+  background-color: none;
+}
+
+.arrowNav {
+  margin: 0 !important;
+  position: absolute;
+  right: 10px;
+}
+
+ul.select-dropdown,
+ul.dropdown-content {
+  width: auto !important;
+
+}
+li > span {
+  white-space: nowrap;
+}
+
+.userInfo{
+  /* margin-left:30px !important;  */
+  top: 5rem !important;
 }
 
 nav .left, nav .right {
@@ -126,34 +151,3 @@ nav .input-field {
 
 /* end nav */
 
-
-
-/* start carousel slider */
-
-.middle-indicator {
-  position:absolute;
-  top:45%;
-}
-
-.middle-indicator-text {
-  font-size: 4.2rem;
-}
-
-a.middle-indicator-text {
-  color: var(--text-primary);
-}
-
-.content-indicator {
-  width: 64px;
-  height: 64px;
-  background: none;
-  -moz-border-radius: 50px;
-  -webkit-border-radius: 50px;
-  border-radius: 50px; 
-}
-   
-/* .indicators {
-  visibility: hidden;
-} */
-
-/* end carousel slider */
