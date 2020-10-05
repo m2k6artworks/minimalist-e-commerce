@@ -20,10 +20,10 @@ const sideNavWidth = (width) => {
 document.addEventListener('DOMContentLoaded', () => {
   const sideNavInstances = M.Sidenav.init(sideNavElems, {
     edge: 'right',
-    onOpenStart: () => { sideNavElems.style.width = "300px";
+    onOpenEnd: () => { sideNavElems.style.width = "300px";
                          bodyElems.style.cssText = "padding-right: 300px;";},
-    onCloseStart: () => { sideNavElems.style.width = "75px";
-                          bodyElems.style.cssText = "padding-right: 75px;";}
+    onCloseStart: () => { sideNavElems.style.width = "0px";
+                          bodyElems.style.cssText = "padding-right: 0px;";}
     // onOpenStart: () => { alert('Open Start'); },
     // onOpenEnd: () => { alert('Open End'); },
     // onCloseStart: () => { alert('Close Start'); },

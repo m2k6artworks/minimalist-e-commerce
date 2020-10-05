@@ -39,6 +39,97 @@
     font-size: 1.2em;
   } 
   /* start nav */
+.card-panel:hover{
+  transition: all 1s cubic-bezier(0.645, 0.045, 0.355, 1);
+  margin-top: 0;
+  box-shadow: 1px 1px 10px 0 rgba(0,0,0,.1);
+}
+
+.carousel {	
+	margin: 0 auto;
+	padding: 0 68px;
+}
+.carousel .carousel-item {
+	text-align: center;
+	overflow: hidden;
+	height: 160px;
+}
+.carousel .carousel-item .img-box {
+	background: #fff;
+	padding: 9px;
+	box-shadow: 0 6px 20px -6px rgba(0,0,0,0.4);
+}
+.carousel .carousel-item img {
+	margin: 0 auto;
+}
+.carousel-control-prev, .carousel-control-next {
+	width: 68px;
+	background: none;
+}
+.carousel-control-prev i, .carousel-control-next i {
+	font-size: 28px;
+	position: absolute;
+	top: 50%;
+	display: inline-block;
+	margin-top: -15px;
+	z-index: 5;
+	left: 0;
+	right: 0;
+	color: rgba(0, 0, 0, 0.8);
+	text-shadow: 0 3px 3px #e6e6e6, 0 0 0 #000;
+}
+.carousel-indicators {
+	bottom: -40px;
+}
+.carousel-indicators li, .carousel-indicators li.active {
+	width: 10px;
+	height: 10px;
+	border: none;
+	border-radius: 50%;
+	margin: 1px 4px;
+	box-shadow: inset 0 2px 1px rgba(0,0,0,0.2);
+}
+.carousel-indicators li {	
+	background: #999;
+	border-color: transparent;
+}
+.carousel-indicators li.active {
+	background: #555;
+}
+
+.text-up{
+  color: #111;
+}
+
+.ribbon {
+  width: 150px;
+ height: 150px;
+ overflow: hidden;
+ position: absolute;
+   top: -10px;
+ right: -10px;
+}
+.ribbon__content {
+ left: -7px;
+ top: 20px;
+ -webkit-transform: rotate(45deg);
+ -ms-transform: rotate(45deg);
+ transform: rotate(45deg);
+ position: absolute;
+ display: block;
+ width: 230px;
+ padding: 5px 0;
+ background-color: #f5cd79;
+ box-shadow: 0 5px 5px rgba(0, 0, 0, 0.192);
+ color: #fff;
+ text-shadow: 0 3px 1px rgba(0,0,0,.2);
+ text-transform: uppercase;
+ text-align: center;
+ border: 2px dotted #fff;
+ outline : 5px solid  #f5cd79;
+
+
+}
 
 nav {
   padding: 0 10px 0 10px;
@@ -129,6 +220,7 @@ nav .input-field {
   border-radius: 20px !important;
 }
 
+
 .rad-desc {
   border:1px solid #dcdcdc;
   border-radius: 0 0 20px 20px !important;
@@ -193,6 +285,10 @@ nav .input-field {
   color: yellow;
 }
 
+.product-price:hover {  
+    background-color: #3e8e41;
+    color: white;
+  }
 .product-price {
   position: absolute;
   background: #11e95b;
