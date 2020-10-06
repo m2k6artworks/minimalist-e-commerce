@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+  <title>Starter Template - Materialize</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/wishlist.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+</head>
+<body>
+  <nav class="purple" role="navigation">
+    <div class="nav-wrapper">
+      <a id="logo-container" href="#" class="left brand-logo grey-text text-darken-4 text-bold">G</a>
+      <ul class="left hide-on-med-and-down search-location">
+        <li>
+        <form action="" method="post" class="location">
+          <div class="input-field">
+              <input id="search" type="search" name="search" placeholder="Cari Lokasi">
+              <label class="label-icon" for="search"><i class="material-icons">search</i></label>
+          </div>
+        </form>
+        </li>
+      </ul>
+      <ul class="left hide-on-med-and-down search-stuff">
+        <li>
+        <form action="" method="post" class="stuff">
+          <div class="input-field">
+              <input id="search" type="search" name="search" placeholder="Cari Barang">
+              <label class="label-icon" for="search"><i class="material-icons">search</i></label>
+          </div>
+        </form>
+        </li>
+      </ul>
+      <ul class="left hide-on-med-and-down">
+        <li>
+          <a class="waves-effect waves-dark btn-large grey lighten-5 grey-text text-darken-4"><i class="material-icons left grey darken-4 grey-text text-lighten-5">add</i>Jual</a>
+        </li>
+      </ul>
+      <ul class="right hide-on-med-and-down">
+        <li>
+          <i class="material-icons grey-text text-darken-5" style="float: left;">account_circle</i><a href="#" class="dropdown-trigger noHover" data-target='dropdown1'><i class="material-icons right arrowNav">arrow_drop_down</i></a>
+          <!-- <a class='dropdown-trigger btn' href='#' data-target='dropdown1'>Drop Me!</a> -->
+        </li>
+      </ul>
+      <ul class="right hide-on-med-and-down">
+        <li>
+          <i class="material-icons grey-text text-darken-5">message</i>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <!-- Dropdown Structure -->
+  <ul id='dropdown1' class='dropdown-content userInfo'>
+    <li><a href="#!"><i class="material-icons">person_outline</i>Profile</a></li>
+    <li><a href="#!"><i class="material-icons">chat_bubble_outline</i>Chat</a></li>
+    <li><a href="#!"><i class="material-icons">help_outline</i>Help</a></li>
+    <li class="divider" tabindex="-1"></li>
+    <li><a href="#!"><i class="material-icons">lock_outline</i>Lock</a></li>
+    <li><a href="#!"><i class="material-icons">keyboard_tab</i>Logout</a></li>
+  </ul>
+  
+
+
+  <div class="section no-pad-bot" id="index-banner">
+    <div class="container">
+      <br><br>
+      <div class="row">
+        <div class="col s12 m4 category-search">
+          <div class="category" >
+            <a href="#!" class="btn waves-effect waves-light in-active"><span>Iklan</span></a>
+            <a href="#!" class="btn waves-effect waves-light active-btn"><span>Favorit</span></a>
+          </div>
+          <form action="" method="post" class="stuff">
+            <div class="input-field">
+                <input id="search" type="search" name="search" placeholder="Cari Berdasar Judul">
+                <label class="label-icon" for="search"><i class="material-icons">search</i></label>
+            </div>
+          </form>
+        </div>
+        <div class="col s12 m3">
+          <span class="acc_balance">
+          Account Balance <br>
+          IDR 9.000.000
+        </span>
+        </div>
+        <div class="col s12 m5" style="text-align: center;">
+          <div class="col s12 m6"> <span class="iklan-active">Prioritas Tertinggi</span></div>
+          <div class="col s12 m6">Prioritas Terendah</div>
+          <div class="row price-range">
+            <div class="col s6">
+              <h4> Price Range <output for="range" class="output">$45 - $50</output> </h4>
+            </div>
+            <div class="col s6">
+              <div class="range-bar"><input id="price-range" type="range" min="5" max="100" value="50" step="5"></div>            
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col s12 m6 iklan-product">
+          <div class="card">
+            <div class="card-image">
+              <img src="img/no-img.png">
+              <div class="badge-category center">
+                    <span>ikan</span>
+              </div>
+              <div class="badge-fav">
+                <span><i class="material-icons">favorite</i></span>
+              </div>
+              <div class="title-desc">
+                <span class="card-title title-desc black-text">Ikan Lele</span>
+                <span class="card-title card-desc title-desc black-text">Ikan Lelesdasd</span>
+              </div>
+              
+            </div>
+            <div class="card-content">
+              <div class="price-section left">
+                <span class="card-title title-desc">Harga</span>
+                <p class="price">Rp. 5.000,00</p>
+              </div>
+              <div class="rating right">
+                <span class="card-title title-desc center">Rating</span>
+                <i class="material-icons icon-yellow">star</i>
+                <i class="material-icons icon-yellow">star</i>
+                <i class="material-icons icon-yellow">star</i>
+                <i class="material-icons icon-yellow">star</i>
+                <i class="material-icons ">star</i>
+              </div>
+              <div class="clear"></div>
+            </div>
+          </div>
+        </div>
+        <div class="col s12 m6 iklan-product">
+          <div class="card">
+            <div class="card-image">
+              <img src="img/no-img.png">
+              <div class="badge-category center">
+                    <span>ikan</span>
+              </div>
+              <div class="badge-fav">
+                <span><i class="material-icons">favorite</i></span>
+              </div>
+              <div class="title-desc">
+                <span class="card-title title-desc black-text">Ikan Lele</span>
+                <span class="card-title card-desc title-desc black-text">Ikan Lelesdasd</span>
+              </div>
+              
+            </div>
+            <div class="card-content">
+              <div class="price-section left">
+                <span class="card-title title-desc">Harga</span>
+                <p class="price">Rp. 5.000,00</p>
+              </div>
+              <div class="rating right">
+                <span class="card-title title-desc center">Rating</span>
+                <i class="material-icons icon-yellow">star</i>
+                <i class="material-icons icon-yellow">star</i>
+                <i class="material-icons icon-yellow">star</i>
+                <i class="material-icons icon-yellow">star</i>
+                <i class="material-icons ">star</i>
+              </div>
+              <div class="clear"></div>
+            </div>
+          </div>
+        </div> 
+      </div>
+      <div class="row">
+        <div class="col s12 m6 iklan-product">
+          <div class="card">
+            <div class="card-image">
+              <img src="img/no-img.png">
+              <div class="badge-category center">
+                    <span>ikan</span>
+              </div>
+              <div class="badge-fav">
+                <span><i class="material-icons">favorite</i></span>
+              </div>
+              <div class="title-desc">
+                <span class="card-title title-desc black-text">Ikan Lele</span>
+                <span class="card-title card-desc title-desc black-text">Ikan Lelesdasd</span>
+              </div>
+              
+            </div>
+            <div class="card-content">
+              <div class="price-section left">
+                <span class="card-title title-desc">Harga</span>
+                <p class="price">Rp. 5.000,00</p>
+              </div>
+              <div class="rating right">
+                <span class="card-title title-desc center">Rating</span>
+                <i class="material-icons icon-yellow">star</i>
+                <i class="material-icons icon-yellow">star</i>
+                <i class="material-icons icon-yellow">star</i>
+                <i class="material-icons icon-yellow">star</i>
+                <i class="material-icons ">star</i>
+              </div>
+              <div class="clear"></div>
+            </div>
+          </div>
+        </div>
+        <div class="col s12 m6 iklan-product">
+          <div class="card">
+            <div class="card-image">
+              <img src="img/no-img.png">
+              <div class="badge-category center">
+                    <span>ikan</span>
+              </div>
+              <div class="badge-fav">
+                <span><i class="material-icons">favorite</i></span>
+              </div>
+              <div class="title-desc">
+                <span class="card-title title-desc black-text">Ikan Lele</span>
+                <span class="card-title card-desc title-desc black-text">Ikan Lelesdasd</span>
+              </div>
+              
+            </div>
+            <div class="card-content">
+              <div class="price-section left">
+                <span class="card-title title-desc">Harga</span>
+                <p class="price">Rp. 5.000,00</p>
+              </div>
+              <div class="rating right">
+                <span class="card-title title-desc center">Rating</span>
+                <i class="material-icons icon-yellow">star</i>
+                <i class="material-icons icon-yellow">star</i>
+                <i class="material-icons icon-yellow">star</i>
+                <i class="material-icons icon-yellow">star</i>
+                <i class="material-icons ">star</i>
+              </div>
+              <div class="clear"></div>
+            </div>
+          </div>
+        </div> 
+      </div>
+    </div>
+    </div>
+    <div class="container pag center">
+      <ul class="pagination">
+        <li class="disabled"><a href="#!"><i class="material-icons">chevron_left</i></a></li>
+        <li class="active"><a href="#!">1</a></li>
+        <li class="waves-effect"><a href="#!">2</a></li>
+        <li class="waves-effect"><a href="#!">3</a></li>
+        <li class="waves-effect"><a href="#!">4</a></li>
+        <li class="waves-effect"><a href="#!">5</a></li>
+        <li class="waves-effect"><a href="#!"><i class="material-icons">chevron_right</i></a></li>
+      </ul>
+    </div>
+    <br><br>
+  </div>
+  
+  
+  
+
+  <footer class="page-footer orange">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">Company Bio</h5>
+          <p class="grey-text text-lighten-4">We are a team of college students working on this project like it's our full time job. Any amount would help support and continue development on this project and is greatly appreciated.</p>
+
+
+        </div>
+        <div class="col l3 s12">
+          <h5 class="white-text">Settings</h5>
+          <ul>
+            <li><a class="white-text" href="#!">Link 1</a></li>
+            <li><a class="white-text" href="#!">Link 2</a></li>
+            <li><a class="white-text" href="#!">Link 3</a></li>
+            <li><a class="white-text" href="#!">Link 4</a></li>
+          </ul>
+        </div>
+        <div class="col l3 s12">
+          <h5 class="white-text">Connect</h5>
+          <ul>
+            <li><a class="white-text" href="#!">Link 1</a></li>
+            <li><a class="white-text" href="#!">Link 2</a></li>
+            <li><a class="white-text" href="#!">Link 3</a></li>
+            <li><a class="white-text" href="#!">Link 4</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+      Made by <a class="orange-text text-lighten-3" href="http://materializecss.com">Materialize</a>
+      </div>
+    </div>
+  </footer>
+
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/wishlist.js"></script>
+  <script src="js/init.js"></script>
+
+  </body>
+</html>
