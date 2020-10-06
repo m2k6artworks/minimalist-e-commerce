@@ -83,7 +83,7 @@
   background-color: #445ae3;
   position: absolute;
   bottom: -2rem;
-  left: 100%;
+  left: 50%;
   transform: translateX(-50%);
   border-radius: 2rem;
 }
@@ -93,6 +93,13 @@
   align-items: center;
   align-content: center;
   
+}
+#topbarsearch .input-field .prefix { 
+  width:0rem !important;    
+  top: 0.2rem !important;    
+  }   
+.catPicture {
+  height: 100%;
 }
 .cards{
   width: 30rem;

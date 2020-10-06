@@ -12,12 +12,13 @@
   <link href="css/materialize-grid-list.css" type="text/css" rel="stylesheet"/>
 <script src="js/materialize-grid-list.js"></script>
 <script src="https://kit.fontawesome.com/27936ba74c.js"></script>
-  <style>       
-    #topbarsearch .input-field .prefix { 
-        width:0rem !important;    
-        top: 0.2rem !important;    
-        }   
-    </style>     
+<script>
+  $(document).ready(function() {
+    
+    $('.carousel').carousel({fullWidth: true});
+    
+});
+</script>
 </head>
 <body>
   <nav class="purple nav-gradient" role="navigation">
@@ -253,7 +254,18 @@
         </div>
       </div>
     
-  
+      <div class="carousel carousel-slider" data-indicators="true">
+        <div class="carousel-item" href="#">
+          <img class="catPicture" src="https://static.pexels.com/photos/62640/pexels-photo-62640.jpeg" />
+        </div>
+        <div class="carousel-item" href="#">
+          <img class="catPicture" src="https://static.pexels.com/photos/60224/pexels-photo-60224.jpeg" />
+        </div>
+        <div class="carousel-item" href="#">
+          <img class="catPicture" src="https://static.pexels.com/photos/20787/pexels-photo.jpg" />
+        </div>
+      </div>
+
 
   <footer class="page-footer orange">
     <div class="footer-copyright">
