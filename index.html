@@ -74,11 +74,11 @@
     </div>
     <li>
       <div class="location-view">
-        <div class="row text-center">
+        <div class="row center">
           <div class="col s6">Jl Arjuna No..</div>
           <div class="col s6"><a href="#edit"><span class="">Edit</span></a></div>
         </div>
-        <div class="row text-center">
+        <div class="row center">
           <div class="col s6"><i class="material-icons">access_time</i> 35 min</div>
           <div class="col s6"><a href="#edit"><span class="">Choose time</span></a></div>
         </div>
@@ -89,43 +89,43 @@
         <b>Order List</b>
       </div>
       <div class="order-list-items">
-        <div class="row text-center">
+        <div class="row center">
           <div class="col s2"><i class="material-icons">image</i></div>
           <div class="col s2">1x</div>
-          <div class="col s6 text-left">Es Teh</div>
+          <div class="col s6 left-align">Es Teh</div>
           <div class="col s2">$0.3</div>
         </div>
-        <div class="row text-center">
+        <div class="row center">
           <div class="col s2"><i class="material-icons">image</i></div>
           <div class="col s2">1x</div>
-          <div class="col s6 text-left">Nasi Pecel</div>
+          <div class="col s6 left-align">Nasi Pecel</div>
           <div class="col s2">$0.5</div>
         </div>
-        <div class="row text-center">
+        <div class="row center">
           <div class="col s2"><i class="material-icons">image</i></div>
           <div class="col s2">2x</div>
-          <div class="col s6 text-left">Tempe</div>
+          <div class="col s6 left-align">Tempe</div>
           <div class="col s2">$0.2</div>
         </div>
       </div>
     </li>
     <li>
       <div class="order-total">
-        <div class="row text-center">
+        <div class="row center">
           <div class="col s2"><i class="material-icons">local_shipping</i></div>
-          <div class="col s8 text-left">Delivery</div>
+          <div class="col s8 left-align">Delivery</div>
           <div class="col s2">$0.3</div>
         </div>
-        <div class="row text-center">
+        <div class="row center">
           <div class="col s2"></div>
-          <div class="col s8 text-left">Total : </div>
+          <div class="col s8 left-align">Total : </div>
           <div class="col s2"><b>$0.3</b></div>
         </div>
       </div>
     </li>
     <li>
       <div class="order-confirm">
-        <div class="row text-right">
+        <div class="row right-align">
           <div class="col s4"></div>
           <div class="col s8"> <button class="btn waves-effect waves-dark" type="submit" name="action">Checkout
             <i class="material-icons right">arrow_forward</i>
@@ -177,7 +177,7 @@
 
   <div class="ads-section">
     <div class="row">
-      <div class="col s12 ads-header text-center"> 
+      <div class="col s12 ads-header center"> 
         Buy 1 Get 1 From Zyata Studio
       </div>
       <div class="col s12 ads-body">
@@ -185,7 +185,7 @@
           <div class="col s5">
             <img src="img/default.jpg">
           </div>
-          <div class="col s7 text-center">
+          <div class="col s7 center">
             <div class="ads-caption">
               <h5>$0 delivery for 30days!</h5>
               <p>$0 delivery fee for orders over $10</p>
@@ -200,13 +200,24 @@
 
   <div class="category-section">
     <div class="row">
-      <div class="col s6 text-left">
+      <div class="col s12 left-align">
         <h4>Items</h4>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col s6 left-align">
         <div class="items-btn">
-          
+          <div class="switch">
+            <label>
+              <input type="checkbox" id="switchToggle">
+              <span class="lever"></span>
+              <span class="options first-opt"> Best Sellers </span>
+              <span class="options second-opt"> Newest </span>
+            </label>
+          </div>
         </div>
       </div>
-      <div class="col s6 text-right price-range">
+      <div class="col s6 right-align price-range">
         <div class="row">
           <div class="col s6">
             <h4> Price Range <output for="range" class="output">$45 - $50</output> </h4>
@@ -219,8 +230,71 @@
     </div>
   </div>
 
-  <div class="container">
-    
+  <div class="carousel">
+    <a class="carousel-item" href="#one!"><img src="https://lorempixel.com/250/250/nature/1"></a>
+    <a class="carousel-item" href="#two!"><img src="https://lorempixel.com/250/250/nature/2"></a>
+    <a class="carousel-item" href="#three!"><img src="https://lorempixel.com/250/250/nature/3"></a>
+    <a class="carousel-item" href="#four!"><img src="https://lorempixel.com/250/250/nature/4"></a>
+    <a class="carousel-item" href="#five!"><img src="https://lorempixel.com/250/250/nature/5"></a>
+  </div>
+
+  <div class="stuff-section">
+    <div class="row">
+      <div class="col s4">
+        <div class="card">
+          <div class="card-image">
+            <img src="img/default.jpg">
+            <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">favorite</i></a>
+          </div>
+          <div class="card-content">
+            <span class="card-title">Nasi Pecel</span>
+            <div class="row left-align">
+              <div class="col s1"><i class="material-icons">star</i></div>
+              <div class="col s2 left-align">4.9</div>
+              <div class="col s7 left-align">Nasi Pecel enak sangad bro. Dijamin kenyang da..</div>
+              <div class="col s2">$0.3</div>
+            </div>
+            <p class="center">Add to Cart | Buy</p>
+          </div>
+        </div>
+      </div>
+      <div class="col s4">
+        <div class="card">
+          <div class="card-image">
+            <img src="img/default.jpg">
+            <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">favorite</i></a>
+          </div>
+          <div class="card-content">
+            <span class="card-title">Nasi Pecel</span>
+            <div class="row left-align">
+              <div class="col s1"><i class="material-icons">star</i></div>
+              <div class="col s2 left-align">4.9</div>
+              <div class="col s7 left-align">Nasi Pecel enak sangad bro. Dijamin kenyang da..</div>
+              <div class="col s2">$0.3</div>
+            </div>
+            <p class="center">Add to Cart | Buy</p>
+          </div>
+        </div>
+      </div>
+      <div class="col s4">
+        <div class="card">
+          <div class="card-image">
+            <img src="img/default.jpg">
+            <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">favorite</i></a>
+          </div>
+          <div class="card-content">
+            <span class="card-title">Nasi Pecel</span>
+            <div class="row left-align">
+              <div class="col s1"><i class="material-icons">star</i></div>
+              <div class="col s2 left-align">4.9</div>
+              <div class="col s7 left-align">Nasi Pecel enak sangad bro. Dijamin kenyang da..</div>
+              <div class="col s2">$0.3</div>
+            </div>
+            <p class="center">Add to Cart | Buy</p>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 
   <div class="section no-pad-bot" id="index-banner">

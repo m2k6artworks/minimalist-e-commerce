@@ -18,9 +18,10 @@
     --bg-primary: #fafafa;
     --bg-secondary:#eeeeee;
     --border-primary:  #bdbdbd; 
-    --transition-speed: 600ms;
     --orange-primary: #E8833A;
     --orange-secondary: #F3C19D;
+    --transition-speed: 600ms;
+    --trans-cubic: cubic-bezier(0.18, 0.89, 0.32, 1.28) 0.9s; 
     scroll-behavior: smooth;
 }
 
@@ -40,18 +41,6 @@ body::-webkit-scrollbar-thumb {
 .text-bold {
   font-weight: bolder !important;
   font-size: 1.2em;
-}
-
-.text-center {
-  text-align: center;
-}
-
-.text-left {
-  text-align: left;
-}
-
-.text-right {
-  text-align: right;
 }
 
 body {
@@ -245,6 +234,7 @@ nav .input-field {
 
 
 /* start carousel slider */
+
 .carousel-item {
   display: flex;
 }
@@ -313,7 +303,7 @@ a.middle-indicator-text {
 
 .ads-body .col:first-child img {
   width: 100%;
-  max-height: 10rem;
+  max-height: 12rem;
   margin: auto;
 }
 
@@ -345,8 +335,49 @@ a.middle-indicator-text {
   margin: 2rem;
 }
 
+.category-section .row {
+  margin-bottom: 0;
+}
+
+.items-btn {
+  width: 45%;
+  padding: .5rem;
+  border-radius: 25px;
+  border: 2px solid grey;
+  display: flex;
+}
+
+.items-btn .switch {
+  margin: auto;
+}
+
+.items-btn .options {
+  border-radius: 25px;
+  border: 2px solid var(--orange-primary);
+  padding: .2rem 1rem;
+  margin: .5rem;
+  color: var(--text-primary);
+  transition: var(--trans-cubic);
+}
+
+.items-btn .lever {
+  display: none !important;
+}
+
+#switchToggle:checked ~ .first-opt,
+.second-opt {
+  background-color: var(--bg-primary);
+}
+
+#switchToggle:checked ~ .second-opt,
+.first-opt {
+  background-color: var(--orange-secondary);
+}
+
+/* half section */
+
 .price-range h4 {
-  font-size: 1.2em;
+  font-size: 1.1em;
 }
 
 .range-bar {
@@ -362,6 +393,7 @@ a.middle-indicator-text {
   border-radius: 10px;
   height: 7px;
   outline: none;
+  /* transition: var(--trans-cubic); */
   transition: background 450ms ease-in;
   -webkit-appearance: none;
   appearance: none;
@@ -383,3 +415,33 @@ a.middle-indicator-text {
 #price-range::-webkit-slider-runnable-track {
   height: 0px;
 }
+
+/* end category section */
+
+
+
+/* start category slider */
+
+.test { }
+
+/* end category slider */
+
+
+
+/* start stuff section  */
+
+.stuff-section {
+  margin: 2.5rem;
+}
+
+.stuff-section .card {
+  border: none;
+  box-shadow: none;
+  background-color: var(--bg-primary);
+}
+
+.stuff-section .card-image img {
+  border-radius: 200px;
+}
+
+/* end stuff section  */
