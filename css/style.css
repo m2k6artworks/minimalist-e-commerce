@@ -43,6 +43,10 @@ body::-webkit-scrollbar-thumb {
   font-size: 1.2em;
 }
 
+.justify-align {
+  text-align: justify;
+}
+
 body {
   color: var(--text-primary);
   background-color: var(--bg-primary);
