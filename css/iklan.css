@@ -69,6 +69,7 @@ nav {
 ul.select-dropdown,
 ul.dropdown-content {
   width: auto !important;
+  padding:0;
 
 }
 li > span {
@@ -151,3 +152,144 @@ nav .input-field {
 
 /* end nav */
 
+
+.category {
+  border: 1px solid black;
+  display: inline-block;
+  padding: 5px 10px;
+  border-radius: 30px;
+  width: 230px;
+  height: 40px;
+  padding-bottom:30px;
+}
+
+.category a {
+  font-size: 12px;
+  height: 20px;
+  font-family: 'Poppins', sans-serif;
+  padding-bottom: 15px;
+  border-radius: 30px;
+  width:100px;
+  text-overflow: ellipsis;
+  color: black;
+}
+
+.category .in-active {
+  background-color: transparent;
+  border: 1px solid transparent;
+  box-shadow: none;
+}
+
+
+.category a span {
+  position: relative;
+  bottom: 8px;
+}
+
+.category .active-btn,.category a:hover {
+  background-color: #f3c19d !important;
+  border:1px solid #e8833a !important;
+}
+
+.category-search form {
+  margin: auto;
+  /* width: 30%; */
+}
+
+.category-search .input-field {
+  margin: 13px 0;
+}
+
+.category-search .search-location {
+  width: 15%;
+}
+
+.category-search .search-stuff {
+  width: 27%;
+}
+
+.category-search .search-stuff li {
+  width: 100%;
+}
+
+.input-field input[type=search] {
+  height: inherit;
+  padding-left: 4rem;
+  width: calc(80% - 4rem);
+  border: 0;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+/* .category-search .input-field{
+  padding-top: 7px;
+} */
+
+.category-search form #search{
+  height: 35px;
+  border: 2px solid var(--border-primary);
+  border-radius: 4px;
+}
+
+.acc_balance {
+  font-size: 1.3rem;
+  /* font-weight: bold; */
+}
+
+.clear {
+  clear: both;
+}
+
+.iklan-active {
+  padding: 10px;
+  color: #6558f5;
+  border-bottom: 4px solid #6558f5;
+}
+
+.iklan-product .log-product {
+  border-radius: 40px;
+  padding: 1px 10px;
+  border: 1px solid black;
+}
+
+.iklan-product i{
+  font-size: 1em;
+  padding-top: 3px;
+}
+
+.iklan-product .section-stock {
+  display: block;
+}
+
+.iklan-product .stock {
+  border-radius: 30px;
+  border: 1px solid black;
+  padding: 10px;
+  margin-top: 20%;
+  width: 20%;
+}
+
+.iklan-product .price {
+  float: left;
+  font-size: 1.2em;
+}
+
+.iklan-product .action {
+  font-size: 1.2em;
+  float: right;
+}
+
+.pag .pagination li.active {
+  background-color: transparent;
+}
+
+.pag .pagination li.active a {
+  color: #6558f5;
+}
+
+
+@media only screen and (min-width: 993px){
+  .container {
+      width: 75%;
+  }
+}
