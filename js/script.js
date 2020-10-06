@@ -64,3 +64,16 @@ prevBtn.addEventListener("click", event => {
   const moveLeft = M.Carousel.getInstance(carouselElems)
   moveLeft.prev(1)
 })
+
+// qselect('#price-range').oninput = function() {
+//   this.style.background = 'linear-gradient(to right, #82CFD0 0%, #82CFD0 ' + this.value + '%, #fff ' + this.value + '%, white 100%)'
+// };
+
+const prcRange = qselect('#price-range');
+prcRange.addEventListener("input", function() {
+  this.style.background = 'linear-gradient(to right, #6558F5 0%, #6558F5 ' + this.value + '%, #fff ' + this.value + '%, #fff 100%)';
+});
+
+$('#price-range').on("input", function() {
+  $('.output').val("$" + (this.value - 5) + " - $" + this.value);
+  }).trigger("change");
