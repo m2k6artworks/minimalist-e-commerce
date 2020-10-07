@@ -13,11 +13,7 @@
 - `https://steemit.com/utopian-io/@gotgame/using-materializecss-to-create-a-shop-layout-for-a-business-website`
 - ``
 - ``
-- ``
-- ``
-- ``
-- ``
-- ``
-- ``
-- ``
-
+# General
+- `https://tobiasahlin.com/blog/move-from-jquery-to-vanilla-javascript/#network-requests-with-get-or-ajax`
+- `https://medium.com/@josephcardillo/arrow-functions-and-this-in-es6-4f1d350a85cf`
+- `https://www.30secondsofcode.org/blog/s/javascript-arrow-function-event-listeners`

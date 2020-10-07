@@ -65,15 +65,11 @@ prevBtn.addEventListener("click", event => {
   moveLeft.prev(1)
 })
 
-// qselect('#price-range').oninput = function() {
-//   this.style.background = 'linear-gradient(to right, #82CFD0 0%, #82CFD0 ' + this.value + '%, #fff ' + this.value + '%, white 100%)'
-// };
+// price range
+const priceRange = qselect('#price-range');
+const priceRangeOutput = qselect(".output");
 
-const prcRange = qselect('#price-range');
-prcRange.addEventListener("input", function() {
-  this.style.background = 'linear-gradient(to right, #6558F5 0%, #6558F5 ' + this.value + '%, #fff ' + this.value + '%, #fff 100%)';
+priceRange.addEventListener("input", (e) => {
+  e.target.style.background = `linear-gradient(to right, #6558F5 0%, #6558F5 ${e.target.value}%, #fff ${e.target.value}%, #fff 100%)`;
+  priceRangeOutput.value = `$ ${e.target.value - 5} - $ ${e.target.value}`;
 });
-
-$('#price-range').on("input", function() {
-  $('.output').val("$" + (this.value - 5) + " - $" + this.value);
-  }).trigger("change");
