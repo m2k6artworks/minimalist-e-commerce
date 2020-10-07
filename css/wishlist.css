@@ -236,8 +236,9 @@ nav .input-field {
   /* font-weight: bold; */
 }
 
-.price-range {
-  margin-top: 40px;
+.range-bar .thumb,
+.range-bar .thumb .active {
+  display: none !important;
 }
 
 .price-range h4 {

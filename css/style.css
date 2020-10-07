@@ -279,51 +279,51 @@ a.middle-indicator-text {
 
 /* start ads section */
 
-.ads-section {
+.adv-section {
   margin: 2rem 1rem;
 }
 
-.ads-section .row {
+.adv-section .row {
   margin-bottom: 0;
 }
 
-.ads-header {
+.adv-header {
   border: 2px solid grey;
   padding: 1rem 0 !important;
   letter-spacing: .3rem;
 }
 
-.ads-body {
+.adv-body {
   border: 2px solid grey;
   border-top: none;
   padding: 0 !important;
   height: auto;
 }
 
-.ads-body .row,
-.ads-body .col {
+.adv-body .row,
+.adv-body .col {
   display: flex;
 }
 
-.ads-body .col:first-child img {
+.adv-body .col:first-child img {
   width: 100%;
   max-height: 12rem;
   margin: auto;
 }
 
-.ads-body .col:last-child {
+.adv-body .col:last-child {
   position: relative;
 }
 
-.ads-caption {
+.adv-caption {
   margin: auto;
 }
 
-.ads-caption h5 {
+.adv-caption h5 {
   font-size: 1.2em;
 }
 
-.ads-more a {
+.adv-more a {
   position: absolute;
   right: 20px;
   bottom: 10px;
@@ -364,7 +364,9 @@ a.middle-indicator-text {
   transition: var(--trans-cubic);
 }
 
-.items-btn .lever {
+.items-btn .lever,
+.range-bar .thumb,
+.range-bar .thumb .active {
   display: none !important;
 }
 
