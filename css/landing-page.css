@@ -130,6 +130,21 @@
   font-size: 1.5rem;
   font-weight: 300;
 }
+
+.map-responsive{
+  overflow:hidden;
+  padding-bottom:56.25%;
+  position:relative;
+  height:100px;
+}
+.map-responsive iframe{
+  left:0;
+  top:0;
+  height:100%;
+  width:100%;
+  position:absolute;
+}
+
 .abouts{
   font-size: 1.5rem;
   margin: 1.5rem 0;
@@ -374,7 +389,7 @@ nav .input-field {
 }
 
 .diskonkok{
-  margin-top: 30px;
+  margin-top: 100px;
   margin-left: 100px;
 }
 
