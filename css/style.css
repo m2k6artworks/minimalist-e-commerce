@@ -86,13 +86,13 @@ body {
               -3px 1px 5px 0 rgba(0, 0, 0, 0.2);
 }
 
-.sideTriggerBtn .material-icons {
-  /* display: block;
+/*.sideTriggerBtn .material-icons {
+   display: block;
   line-height: initial;
   margin-left: 10px;
   margin-right: -10px;
-  position: absolute; */
-}
+  position: absolute; 
+}*/
 
 .sidenav {
   /* transform: translateX(0%) !important; */
@@ -279,51 +279,51 @@ a.middle-indicator-text {
 
 /* start ads section */
 
-.adv-section {
+.promote-section {
   margin: 2rem 1rem;
 }
 
-.adv-section .row {
+.promote-section .row {
   margin-bottom: 0;
 }
 
-.adv-header {
+.promote-header {
   border: 2px solid grey;
   padding: 1rem 0 !important;
   letter-spacing: .3rem;
 }
 
-.adv-body {
+.promote-body {
   border: 2px solid grey;
   border-top: none;
   padding: 0 !important;
   height: auto;
 }
 
-.adv-body .row,
-.adv-body .col {
+.promote-body .row,
+.promote-body .col {
   display: flex;
 }
 
-.adv-body .col:first-child img {
+.promote-body .col:first-child img {
   width: 100%;
   max-height: 12rem;
   margin: auto;
 }
 
-.adv-body .col:last-child {
+.promote-body .col:last-child {
   position: relative;
 }
 
-.adv-caption {
+.promote-caption {
   margin: auto;
 }
 
-.adv-caption h5 {
+.promote-caption h5 {
   font-size: 1.2em;
 }
 
-.adv-more a {
+.promote-more a {
   position: absolute;
   right: 20px;
   bottom: 10px;
@@ -428,7 +428,7 @@ a.middle-indicator-text {
 
 /* start category slider */
 
-.test { }
+
 
 /* end category slider */
 
