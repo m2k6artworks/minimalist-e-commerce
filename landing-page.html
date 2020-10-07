@@ -12,6 +12,8 @@
   <link href="css/materialize-grid-list.css" type="text/css" rel="stylesheet"/>
 <script src="js/materialize-grid-list.js"></script>
 <script src="https://kit.fontawesome.com/27936ba74c.js"></script>
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <script>
   $(document).ready(function() {
     
@@ -46,7 +48,7 @@
         <div class="row">
           <div class="col s12 m12 ">
 
-            <div class="carousel carousel-slider">
+            <div class="carousel carousel-slider w3-grayscale-min">
               <a class="carousel-item" href="#one!"><img src="http://lorempixel.com/800/400/food/1"></a>
               <a class="carousel-item" href="#two!"><img src="http://lorempixel.com/800/400/food/2"></a>
               <a class="carousel-item" href="#three!"><img src="http://lorempixel.com/800/400/food/3"></a>
@@ -58,13 +60,36 @@
   
   </div>
 
-
   <div class="container">
     <div class="section">
+      <div class="row">
+        <div class="col s12 m6">
+          <div class="card-panel hoverable image-2 image-landing rad"> 
+            <div class="valign-wrapper right">
+              <h5>This should be vertically aligned</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col s12 m6">
+          <div class="card-panel hoverable image-2 image-landing rad"> 
+            <div class="valign-wrapper right">
+              <h5>This should be vertically aligned</h5>
+            </div>
+          </div>
+        </div>
+      </div>
 
+    </div>
+  </div>
+
+ <div class="container">
+    <div class="section">
       <!--   Icon Section   -->
       <div class="row">
-        <div class="col s12 m3">
+        <div data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="300" data-aos-offset="0">
+      <h1 class="headings w3-hover-sepia">Top 3 Products Of The Weeks</h1>
+        </div>
+        <div class="col s12 m3 " data-aos="zoom-out-up">
           <div class="card rad-product shadow-box" style="background: linear-gradient(135deg, #fa782e 8%, #c82930 83%);">
             <div class="card-content white-text no-bottom" style="font-size: 10px;"> 
               <img src="img/sws1.png" class="product-img">
@@ -103,7 +128,7 @@
         <div class="col s1 m1 l1"> 
         </div>
 
-        <div class="col s12 m3">
+        <div class="col s12 m3" data-aos="zoom-in-down" data-aos-duration="2000">
           <div class="card rad-product shadow-box" style="background: linear-gradient(135deg, #fa782e 8%, #c82930 83%);">
             <div class="card-content white-text no-bottom" style="font-size: 10px;"> 
               <img src="img/sws1.png" class="product-img">
@@ -139,11 +164,11 @@
             </div>
           </div>
         </div>
+ 
 
-        <div class="col s1 m1 l1"> 
+        <div class="col s1 m1 l1 "> 
         </div>
-
-        <div class="col s12 m3">
+        <div class="col s12 m3 " data-aos="zoom-in-left" >
           <div class="card rad-product shadow-box" style="background: linear-gradient(135deg, #fa782e 8%, #c82930 83%);">
             <div class="card-content white-text no-bottom" style="font-size: 10px;"> 
               <img src="img/sws1.png" class="product-img">
@@ -179,38 +204,193 @@
           </div>
         </div>
 
-
       </div>
 
     </div>
   </div>
-  
+<br>
+
+<!-- <div class="container"> -->
+  <!-- <div class="section"> -->
+<!--   Icon icon   -->
+<!-- <div class="row ">
+ <div class="col s4 m3">
+  <div class="card-panel rad w3-hover-opacity w3-hover-light">
+<span class="deep-purple-text text-darken-3"><i class="material-icons center">flight_land</i> Gratis Ongkir
+  <br><sup>Untukmu Gratis Ongkir Seluruh Indonesia Tanpa Biaya Tambahan</sup>
+      </div>
+</div>
+<div class="col s4 m3 ">
+  <div class="card-panel rad w3-hover-opacity w3-hover-light">
+    <span class="deep-purple-text text-darken-3"><i class="material-icons center">phone_in_talk</i> CS 24jam
+  <br><sup>Keluhanmu akan tertangani secara 24jam dengan CS handal kami</sup></span>
+      </div>
+    </div>
+<div class="col s4 m3">
+  <div class="card-panel rad w3-hover-opacity w3-hover-light">
+    <span class="deep-purple-text text-darken-3"><i class="material-icons center">verified_user</i> Perlindungan 
+  <br><sup>Dengan Perlindungan Barang dan Penjual Yang Terverifikasi</sup></span>
+      </div>
+    </div>
+<div class="col s4 m3">
+  <div class="card-panel rad w3-hover-opacity w3-hover-light">
+    <span class="deep-purple-text text-darken-3"><i class="material-icons center">money_off</i> Penuh Diskon
+  <br><sup>Barang Dengan Penuh Promo dan Diskon Untukmu</sup></span>
+      </div>
+    </div>
+    </div>
+</div>
+</div> -->
+
+<div class="container .show-on-large">
+  <div class="section">
+    <div class="row">
+      <div class="col s12 m12">
+        <div class="card-panel hoverable image-2 image-landings rads"> 
+          <div class="diskonkok">
+          <div class="valign-wrapper">
+            
+            <h4 class="red-text text-lighten-3">20% off</h4>
+          </div>
+          <div class="valign-wrapper left">
+          <h1><b>FINE SMILE</b></h1>
+        </div>
+        <div class="valign-wrapper">
+          <img src="img/sws1.png" class="product-imgs">
+        </div>
+        <div class="valign-wrapper right atasin">
+          <ul>
+          <li><h4>Best Choose</h4></li>
+          <li><p><h1><b> Summer Sale </b></h1></p></li>
+          <li><p><button class="btn waves-effect waves-light rads"  name="action">Beli Sekarang
+            <i class="material-icons right">shopping_cart</i>
+          </button></p></li>
+        </ul>
+        </div>
+        </div>
+        </div>
+        </div>
+      </div>
+    </div>
+    </div>
+    </div>
+  </div>
+
   <div class="container">
-    <div class="section">
-      <div class="row">
-        <div class="col s12 m6">
-          <div class="card-panel hoverable image-2 image-landing rad"> 
-            <div class="valign-wrapper right">
-              <h5>This should be vertically aligned</h5>
-            </div>
+    <div data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="300" data-aos-offset="0">
+      <h1 class="headings w3-hover-sepia">Top News Product</h1>
+    <div class="row">
+      <div class="col m3 s12">
+        <div class="card-content image-landings rad">
+            <img src="img/sws1.png" class="responsive-img products-imgs materialboxed rads" alt="">
+        </div>
+        <div class="card-action">
+          <ul>
+            <li><p>Discover Shoes</p></li>
+            <li><p>$15</p></li>
+          </ul>
           </div>
         </div>
-        <div class="col s12 m6">
-          <div class="card-panel hoverable image-2 image-landing rad"> 
-            <div class="valign-wrapper right">
-              <h5>This should be vertically aligned</h5>
-            </div>
-          </div>
+      <div class="col m3 s12">
+        <div class="card-content image-landings rad">
+            <img src="img/sws1.png" class="responsive-img materialboxed rad" alt="" >
+        </div>
+        <div class="card-action purple-grey text-lighten-3">
+            <p>Discover Shoes</p>
+            <p>$15</p>
         </div>
       </div>
-
+    <div class="col m3 s12">
+      <div class="card-content image-landings rad">
+            <img src="img/sws1.png" class="responsive-img rad materialboxed" alt="">
+      </div>
+      <div class="card-action purple-grey text-lighten-3">
+            <p>Discover Shoes</p>
+            <p>$15</p>
+      </div>
+    </div>
+      <div class="col m3 s12">
+        <div class="card-content image-landings rad">
+            <img src="img/sws1.png" class="responsive-img rad materialboxed" alt="">
+        </div>
+        <div class="card-action purple-grey text-lighten-3">
+            <p>Discover Shoes</p>
+            <p>$15</p>
+        </div>
+      </div>
+    <div class="row">
+      <div class="col m3 s12">
+        <div class="card-content image-landings rad">
+            <img src="img/sws1.png" class="responsive-img rad materialboxed" alt="">
+        </div>
+            <div class="card-action purple-grey text-lighten-3">
+            <p>Discover Shoes</p>
+            <p>$15</p>
+          </div>
+      </div>
+      <div class="col m3 s12">
+        <div class="card-content image-landings rad">
+            <img src="img/sws1.png" class="responsive-img  rad materialboxed" alt="">
+        </div>
+        <div class="card-action purple-grey text-lighten-3">
+            <p>Discover Shoes</p>
+            <p>$15</p>
+        </div>
+    </div>
+    <div class="col m3 s12">
+      <div class="card-content image-landings rad">
+            <img src="img/sws1.png" class="responsive-img rad materialboxed" alt=""></li>
+          </div>
+          <div class="card-action purple-grey text-lighten-3">
+                <p>Discover Shoes</p>
+                <p>$15</p>
+              </div>
+    </div>
+    <div class="col m3 s12">
+      <div class="card-content image-landings rad">
+            <img src="img/sws1.png" class="responsive-img rad materialboxed" alt="">
+      </div>
+      <div class="card-action purple-grey text-lighten-3">
+            <p>Discover Shoes</p>
+            <p>$15</p>
+          </div>
     </div>
   </div>
+</div>
+</div>
+</div>
+
+
+  <section class="partner-area">
   
+              <div class ="row">
+                  <div class="col l2 m4 s12" style="margin-top: 40px;">
+                     <h6 class="white-text"><b>TRUSTED BY</b></h6>
+                  </div>
+                  <div class="col l2 m4 s12">
+                      <img src="img/partner2.png">
+                  </div>
+                  <div class="col l2 m4 s12">
+                      <img src="img/partner3.png">
+                  </div>
+                  <div class="col l2 m4 s12">
+                      <img src="img/partner4.png">
+                  </div>
+                  <div class="col l2 m4 s12">
+                      <img src="img/partner5.png">
+                  </div>
+                  <div class="col l2 m4 s12">
+                      <img src="img/partner1.png">
+                  </div>
+              </div>
+            </section>
     
-      <h1 class="headings">Team</h1>
-      <div class="card-wrappers"> 
-
+      <h1 class="headings w3-hover-sepia">Team</h1>
+      <div class="card-wrappers" > 
+      <div data-aos="fade-zoom-in"
+      data-aos-easing="ease-in-back"
+      data-aos-delay="300"
+      data-aos-offset="0">
         <div class="cards">
           <img src="https://source.unsplash.com/9R-CH7PR150" alt="" class="card-imgs">
           <img src="https://source.unsplash.com/4nulm-JUYFo" alt="" class="profile-imgs">
@@ -224,21 +404,8 @@
             <li><a href=""><i class="fab fa-youtube"></i></a></li>
           </ul>
         </div>
-
-        <div class="cards">
-          <img src="https://source.unsplash.com/9R-CH7PR150" alt="" class="card-imgs">
-          <img src="https://source.unsplash.com/4nulm-JUYFo" alt="" class="profile-imgs">
-          <h2>Nome Cognome</h2>
-          <p class="job-titles">Designer</p>
-          <p class="abouts">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi commodi consectetur dolores doloribus fuga id illum rerum tempore. Ad eligendi expedita id quae reiciendis! Ea natus nobis quas sunt? Sunt.</p>
-          <ul class="social-media">
-            <li><a href=""><i class="fab fa-facebook-square"></i></a></li>
-            <li><a href=""><i class="fab fa-twitter-square"></i></a></li>
-            <li><a href=""><i class="fab fa-instagram"></i></a></li>
-            <li><a href=""><i class="fab fa-youtube"></i></a></li>
-          </ul>
-        </div>
-
+</div>
+        <div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
         <div class="cards">
           <img src="https://source.unsplash.com/9R-CH7PR150" alt="" class="card-imgs">
           <img src="https://source.unsplash.com/4nulm-JUYFo" alt="" class="profile-imgs">
@@ -253,6 +420,25 @@
           </ul>
         </div>
       </div>
+      <div data-aos="fade-zoom-in"
+      data-aos-easing="ease-in-back"
+      data-aos-delay="300"
+      data-aos-offset="0">
+        <div class="cards">
+          <img src="https://source.unsplash.com/9R-CH7PR150" alt="" class="card-imgs">
+          <img src="https://source.unsplash.com/4nulm-JUYFo" alt="" class="profile-imgs">
+          <h2>Nome Cognome</h2>
+          <p class="job-titles">Designer</p>
+          <p class="abouts">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi commodi consectetur dolores doloribus fuga id illum rerum tempore. Ad eligendi expedita id quae reiciendis! Ea natus nobis quas sunt? Sunt.</p>
+          <ul class="social-media">
+            <li><a href=""><i class="fab fa-facebook-square"></i></a></li>
+            <li><a href=""><i class="fab fa-twitter-square"></i></a></li>
+            <li><a href=""><i class="fab fa-instagram"></i></a></li>
+            <li><a href=""><i class="fab fa-youtube"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
     
       <div class="carousel carousel-slider" data-indicators="true">
         <div class="carousel-item" href="#">
@@ -280,11 +466,26 @@
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
   <script src="js/materialize.js"></script>
   <script src="js/init.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
+    AOS.init();
+  </script>
+  <script>
+    const materialbox = document.querySelectorAll('.materialboxed');
+        M.Materialbox.init(materialbox);
         $(document).ready(function(){
       $('.carousel').carousel();
     });
   
+    $('.carousel.carousel-slider').carousel({
+    fullWidth: true,
+  });
+  autoplay();
+  function autoplay() {
+    $('.carousel.carousel-slider').carousel('next');
+    setTimeout(autoplay, 2500);
+}
+        
   </script>
 
   </body>

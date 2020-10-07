@@ -2,7 +2,6 @@
 ## Link Referensi
 
 # For some page & landing page
--  `https://codepen.io/Paul2512C/pen/zYYpBRZ`
 - `https://codepen.io/KaioRocha/pen/bPMgaY`
 - `https://codepen.io/mdbootstrap/pen/aVOBNX`
 - `https://www.bootdey.com/snippets/view/bs4-ecommerce-products`
