@@ -12,7 +12,7 @@
 - `https://codepen.io/bechster/pen/jgYzrq`
 - `https://steemit.com/utopian-io/@gotgame/using-materializecss-to-create-a-shop-layout-for-a-business-website`
 - `https://codepen.io/priyanshu-219/pen/MWadRJY`
-- ``
+- `https://codepen.io/jeanpaze/pen/zKgYoO`
 # General
 - `https://tobiasahlin.com/blog/move-from-jquery-to-vanilla-javascript/#network-requests-with-get-or-ajax`
 - `https://medium.com/@josephcardillo/arrow-functions-and-this-in-es6-4f1d350a85cf`
