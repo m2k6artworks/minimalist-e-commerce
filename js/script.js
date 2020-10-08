@@ -97,3 +97,33 @@ leftBtn.addEventListener("click", event => {
   const moveLeft = M.Carousel.getInstance(carouselCategoryElems)
   moveLeft.prev(1)
 })
+
+const categoryCard = qselect('.carousel-category .carousel-item .card', true)
+categoryCard.forEach(catBtn => {
+  catBtn.addEventListener("click", event => {
+    categoryCard.forEach(catBtns => {
+      catBtns.classList.remove('card-active');
+    })
+    catBtn.classList.add('card-active');
+  })
+})
+
+const favoriteBtn = qselect('.stuff-section .btn-floating i', true)
+favoriteBtn.forEach(favBtn => {
+  favBtn.addEventListener("click", event => {
+    if (favBtn.classList.contains('liked')) {
+      // favBtn.style.transition = ".2s ease-out";
+      favBtn.classList.remove('zoom-anim')
+      void event.target.offsetWidth;
+      favBtn.classList.remove('liked')
+      favBtn.classList.add('zoom-anim')
+    }
+    else {
+      // favBtn.style.transition = ".2s ease-out";
+      favBtn.classList.add('liked')
+      favBtn.classList.remove('zoom-anim')
+      void event.target.offsetWidth;
+      favBtn.classList.add('zoom-anim')
+    }
+  })
+})

@@ -1,13 +1,4 @@
-/* Custom Stylesheet */
-/**
- * Use this file to override Materialize files so you can update
- * the core Materialize files in the future
- *
- * Made By MaterializeCSS.com
- */
- 
-
- @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
  
 :root {
 	/*box-sizing: border-box;*/
@@ -56,6 +47,10 @@ body {
   /* padding-right: 75px; */
 }
 
+
+
+/* start sidenav cart  */
+
 .sidenav, .sideTriggerBtn a {
   background-color: var(--bg-secondary);
 }
@@ -86,7 +81,7 @@ body {
               -3px 1px 5px 0 rgba(0, 0, 0, 0.2);
 }
 
-/*.sideTriggerBtn .material-icons {
+/*.sideTriggerBtn i {
    display: block;
   line-height: initial;
   margin-left: 10px;
@@ -101,7 +96,7 @@ body {
   padding: 2.5rem 1rem;
 }
 
-.sidenav li .material-icons {
+.sidenav li i {
   vertical-align: sub;
 }
 
@@ -153,6 +148,9 @@ body {
   height: 45px;
   margin: auto;
 }
+
+/* end sidenav cart  */
+
 
 
 /* start nav */
@@ -215,9 +213,9 @@ nav .input-field {
   padding: 0 15px;
 }
 
-.input-field .material-icons {
-  line-height: 40px;
-  height: 35px;
+.nav-wrapper .input-field i {
+  line-height: 40px !important;
+  height: 35px !important;
 }
 
 .nav-wrapper .btn-large {
@@ -228,7 +226,7 @@ nav .input-field {
   margin: auto;
 }
 
-.nav-wrapper .btn-large .material-icons {
+.nav-wrapper .btn-large i {
   clip-path: circle();
   margin: 0;
   margin-right: .7em;
@@ -237,7 +235,15 @@ nav .input-field {
 /* end nav */
 
 
+
 /* start carousel slider */
+.carousel .middle-indicator {
+  z-index: 1;
+}
+
+.carousel .arrow-right {
+  right: 0 !important;
+}
 
 .carousel-item {
   display: flex;
@@ -277,7 +283,7 @@ a.middle-indicator-text {
 
 
 
-/* start ads section */
+/* start promote section */
 
 .promote-section {
   margin: 2rem 1rem;
@@ -330,7 +336,8 @@ a.middle-indicator-text {
   color: var(--orange-primary)
 }
 
-/* end ads section */
+/* end promote section */
+
 
 
 /* start category section */
@@ -446,6 +453,13 @@ a.middle-indicator-text {
 .carousel-category .carousel-item .card,
 .carousel-category .carousel-item .col  {
   margin: auto;
+  z-index: 99;
+}
+
+.carousel-category .carousel-item .card-active {
+  border: 5px solid var(--orange-primary) !important;
+  background-color: var(--orange-secondary) !important;
+  transition: var(--trans-cubic);
 }
 
 .carousel-category .carousel-item .card {
@@ -455,6 +469,8 @@ a.middle-indicator-text {
   padding-bottom: 1rem;
   border: solid 5px var(--bg-secondary);
   box-shadow: none;
+  cursor: pointer;
+  transition: var(--trans-cubic);
 }
 
 .carousel-category .carousel-item .card img {
@@ -477,8 +493,62 @@ a.middle-indicator-text {
   background-color: var(--bg-primary);
 }
 
+.stuff-section .card-content i {
+  vertical-align: middle;
+}
+
 .stuff-section .card-image img {
-  border-radius: 200px;
+  border-radius: 120px;
+  height: 220px;
+}
+
+.stuff-section .btn-floating {
+  top: .6rem;
+  right: 1rem;
+  border: 2px solid var(--orange-primary);
+  background-color: var(--orange-secondary);
+  display: flex;
+}
+
+.stuff-section .btn-floating i {
+  margin: 0;
+  color: var(--bg-primary);
+}
+
+.liked {
+  text-stroke: 2px var(--orange-secondary);
+  -webkit-text-stroke : 2px var(--orange-secondary);
+  color: var(--orange-primary) !important;
+}
+
+.zoom-anim {
+  animation: zoominout .3s ease-in;
+}
+
+@keyframes zoominout {
+  0% {
+      transform: scale(.1) /*rotate(45deg)*/;
+  }
+
+  25% {
+      transform: scale(1) /*rotate(90deg)*/;
+  }
+
+  30% {
+      transform: scale(1.2) /*rotate(180deg)*/;
+  }
+
+  50% {
+      transform: scale(1) /*rotate(270deg)*/;
+  }
+
+  75% {
+      transform: scale(1.1) /*rotate(90deg)*/;
+  }
+
+  100% {
+      transform: scale(1) /*rotate(360deg)*/;
+  }
 }
 
 /* end stuff section  */
