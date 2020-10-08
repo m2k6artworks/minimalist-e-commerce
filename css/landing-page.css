@@ -456,7 +456,7 @@ nav .input-field {
 }
 
 .rads{
-  border-radius: 70px;
+  border-radius: 70px !important;
 }
 
 .rad-product {
@@ -525,7 +525,7 @@ nav .input-field {
 }
 
 @media only screen and (min-width: 1000px) {
-  .container {
+  body .container {
     width: 85%;
   }
 }
