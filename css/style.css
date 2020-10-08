@@ -428,7 +428,38 @@ a.middle-indicator-text {
 
 /* start category slider */
 
+.category-slider {
+  margin: 2.5rem;
+}
 
+.carousel-category {
+  height: 300px !important;
+}
+
+.carousel-category .carousel-item,
+.carousel-category .carousel-item .col {
+  display: flex;
+  min-height: 0 !important;
+  height: auto;
+}
+
+.carousel-category .carousel-item .card,
+.carousel-category .carousel-item .col  {
+  margin: auto;
+}
+
+.carousel-category .carousel-item .card {
+  border-radius: 200px;
+  overflow: hidden;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+  border: solid 5px var(--bg-secondary);
+  box-shadow: none;
+}
+
+.carousel-category .carousel-item .card img {
+  clip-path: circle();
+}
 
 /* end category slider */
 

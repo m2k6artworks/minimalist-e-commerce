@@ -38,9 +38,9 @@ document.addEventListener('DOMContentLoaded', () => {
 // })
 
 
-// carrousel
+// carousel
 
-const carouselElems = qselect('.carousel.carousel-slider')
+const carouselElems = qselect('.carousel.carousel-slider.carousel-banner')
 
 document.addEventListener('DOMContentLoaded', () => {
   const carouselInstance = M.Carousel.init(carouselElems, {
@@ -73,3 +73,27 @@ priceRange.addEventListener("input", (e) => {
   e.target.style.background = `linear-gradient(to right, #6558F5 0%, #6558F5 ${e.target.value}%, #fff ${e.target.value}%, #fff 100%)`;
   priceRangeOutput.value = `$ ${e.target.value - 5} - $ ${e.target.value}`;
 });
+
+const carouselCategoryElems = qselect('.carousel.carousel-slider.carousel-category')
+
+document.addEventListener('DOMContentLoaded', () => {
+  const carouselInstance = M.Carousel.init(carouselCategoryElems, {
+      duration: 300,
+      fullWidth: true,
+      indicators: false
+  }, true, true)
+})
+
+//next button
+const rightBtn = qselect('.moveRightCarousel')
+rightBtn.addEventListener("click", event => {
+  const moveRight = M.Carousel.getInstance(carouselCategoryElems)
+  moveRight.next(1)
+})
+
+//prev button
+const leftBtn = qselect('.moveLeftCarousel')
+leftBtn.addEventListener("click", event => {
+  const moveLeft = M.Carousel.getInstance(carouselCategoryElems)
+  moveLeft.prev(1)
+})
