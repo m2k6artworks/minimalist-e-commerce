@@ -117,7 +117,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  box-shadow: .5rem .5rem 3rem rgba(0,0,0,0.2);
+  box-shadow: .5rem .7rem 3rem rgba(0,0,0,0.2);
 }
 .cards h2{
   font-size: 2rem;
@@ -155,8 +155,8 @@
 .cards .btns{
   padding: 2rem 3rem;
   background-color: #445ae3;
-  border-radius: 2rem;
   margin: 0.5rem 0;
+  border-radius: 2rem;
   text-transform: uppercase;
   color: #eee;
   font-size: 1rem;
