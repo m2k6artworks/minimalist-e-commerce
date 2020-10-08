@@ -35,6 +35,7 @@
     background-repeat: no-repeat;
     background-size: cover;
   }
+
   
   .image-1 {
     height: 70vh;
@@ -382,36 +383,6 @@ nav .input-field {
 
 /* end nav */
 
-.rad {
-  border-radius: 10px;
-}
-
-.diskonkok{
-  margin-top: 100px;
-  margin-left: 100px;
-}
-
-.rads{
-  border-radius: 70px;
-}
-
-.rad-product {
-  border-radius: 20px !important;
-}
-
-
-.rad-desc {
-  border:1px solid #dcdcdc;
-  border-radius: 0 0 20px 20px !important;
-}
-
-.shadow-box {
-  box-shadow: -10px 15px 8px 0px #888;
-}
-
-.no-bottom {
-  padding-bottom: 0 !important;
-}
 
 .card{
   transition: all .5s;
@@ -464,6 +435,48 @@ nav .input-field {
   margin-left: 550px;
 }
 
+
+
+.important-index {
+  z-index: 999;
+}
+
+.mtb {
+  margin: 20px 0;
+}
+}
+
+.rad {
+  border-radius: 10px;
+}
+
+.diskonkok{
+  margin-top: 100px;
+  margin-left: 100px;
+}
+
+.rads{
+  border-radius: 70px;
+}
+
+.rad-product {
+  border-radius: 20px !important;
+}
+
+
+.rad-desc {
+  border:1px solid #dcdcdc;
+  border-radius: 0 0 20px 20px !important;
+}
+
+.shadow-box {
+  box-shadow: -10px 15px 8px 0px #888;
+}
+
+.no-bottom {
+  padding-bottom: 0 !important;
+}
+
 .badge {
   position: relative;
   font-size: 10px;
@@ -511,17 +524,90 @@ nav .input-field {
   box-shadow: -10px 20px 15px -10px rgba(17, 233, 91, 0.3);
 }
 
-.important-index {
-  z-index: 999;
-}
-
-.mtb {
-  margin: 20px 0;
-}
-
 @media only screen and (min-width: 1000px) {
   .container {
     width: 85%;
   }
 }
+
+@media only screen and (min-width: 601px) {
+  .non-mobile {
+    display: block;
+  }
+  
+  .car-mobile {
+    display: none;
+  }
+}
+
+
+
+
+@media only screen and (max-width: 600px) {
+  .sidenav {
+    font-family: 'Poppins', sans-serif;
+    padding-left: 0;
+  }
+  .display {
+    display: inline-block !important;
+  }
+  
+  .non-mobile {
+    display: none;
+  }
+
+  .car-mobile {
+    display: block;
+  }
+
+  .carousel {
+    height: 300px;
+  }
+  
+  /* .carousel .carousel-item {
+    width: 100% !important;
+  }  */
+
+  .diskonkok{
+    margin-left: auto;
+  }
+
+  .diskonkok .valign-wrapper {
+    float: none !important;
+  }
+
+  .diskonkok .valign-wrapper img {
+    width: 100%;
+  }
+  .atasin {
+    margin-top: auto;
+  }
+
+  .product-price {
+    font-size: 20px;
+  }
+
+  .sale {
+    height: auto;
+  }
+
+  .overflow-x {
+    overflow-x: hidden;
+  }
+  .headings {
+    margin-right: 0 !important;
+  }
+
+  .trusted-mobile {
+    background-image: url(https://img.okezone.com/content/2020/09/03/406/2272312/semua-jalur-pendakian-gunung-prau-kembali-dibuka-ZGLNSYvS3R.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    text-align: center;
+    /* height:200px; */
+    padding: 50px;
+  }
+
+  .team {
+    padding: 15px 0 !important; 
+  }
 }

@@ -9,22 +9,24 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <link href="css/landing-page.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-  <link href="css/materialize-grid-list.css" type="text/css" rel="stylesheet"/>
-<script src="js/materialize-grid-list.js"></script>
+  <!-- <link href="css/materialize-grid-list.css" type="text/css" rel="stylesheet"/> -->
+<!-- <script src="js/materialize-grid-list.js"></script> -->
 <script src="https://kit.fontawesome.com/27936ba74c.js"></script>
-<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<!-- <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> -->
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <script>
-  $(document).ready(function() {
+//   $(document).ready(function() {
     
-    $('.carousel').carousel({fullWidth: true});
+//     $('.carousel').carousel({fullWidth: true});
     
-});
+// });
 </script>
 </head>
 <body>
   <nav class="purple nav-gradient" role="navigation">
     <div class="nav-wrapper container">
+      <a id="logo-container" href="#" class="brand-logo grey-text text-darken-4 text-bold display" style="display: none;">G</a>
+      <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
       <ul class="left hide-on-med-and-down">
         <li><a href="#">Home</a></li>
         <li><a href="#">Shop</a></li>
@@ -43,9 +45,18 @@
       </ul>
     </div>
   </nav>
+
+  <ul class="sidenav" id="mobile-demo">
+    <li><a href="#">Home</a></li>
+    <li><a href="#">Shop</a></li>
+    <li><a href="#">About Us</a></li>
+    <li><a href="#">Contact Us</a></li>
+  </ul>
+
+
   <div class="section no-pad-bot" id="index-banner">
     <div class="container">
-        <div class="row">
+        <div class="row non-mobile">
           <div class="col s12 m12 ">
 
             <div class="carousel carousel-slider w3-grayscale-min">
@@ -57,6 +68,18 @@
           </div>
         </div>
       </div>
+
+      <div class="row">
+        <div class="carousel car-mobile">
+          <a class="carousel-item" href="#one!"><img src="https://lorempixel.com/250/250/nature/1"></a>
+          <a class="carousel-item" href="#two!"><img src="https://lorempixel.com/250/250/nature/2"></a>
+          <a class="carousel-item" href="#three!"><img src="https://lorempixel.com/250/250/nature/3"></a>
+          <a class="carousel-item" href="#four!"><img src="https://lorempixel.com/250/250/nature/4"></a>
+          <a class="carousel-item" href="#five!"><img src="https://lorempixel.com/250/250/nature/5"></a>
+        </div>
+      </div>
+        
+      
   
   </div>
 
@@ -85,11 +108,11 @@
  <div class="container">
     <div class="section">
       <!--   Icon Section   -->
-      <div class="row">
+      <div class="row overflow-x">
         <div data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="300" data-aos-offset="0">
       <h1 class="headings w3-hover-sepia">Top 3 Products Of The Weeks</h1>
         </div>
-        <div class="col s1 m1 " data-aos="zoom-out-up"></div>
+        <!-- <div class="col s12 m1 " data-aos="zoom-out-up"></div> -->
         <div class="col s12 m3 " data-aos="zoom-out-up">
           <div class="card rad-product shadow-box" style="background: linear-gradient(135deg, #fa782e 8%, #c82930 83%);">
             <div class="card-content white-text no-bottom" style="font-size: 10px;"> 
@@ -126,7 +149,7 @@
           </div>
         </div>
         
-        <div class="col s1 m1 l1"> 
+        <div class="col s12 m1 l1"> 
         </div>
 
         <div class="col s12 m4" data-aos="zoom-in-down" data-aos-duration="2000">
@@ -167,7 +190,7 @@
         </div>
  
 
-        <div class="col s1 m1 l1 "> 
+        <div class="col s12 m1 l1 "> 
         </div>
         <div class="col s12 m3 " data-aos="zoom-in-left" >
           <div class="card rad-product shadow-box" style="background: linear-gradient(135deg, #fa782e 8%, #c82930 83%);">
@@ -214,25 +237,25 @@
   <div class="section">
 <!--   Icon icon   -->
 <div class="row ">
- <div class="col s4 m3">
+ <div class="col s12 m3">
   <div class="card-panel rad w3-hover-opacity w3-hover-light">
 <span class="deep-purple-text text-darken-3"><i class="material-icons center">flight_land</i> Gratis Ongkir
   <br><sup>Untukmu Gratis Ongkir Seluruh Indonesia Tanpa Biaya Tambahan</sup>
       </div>
 </div>
-<div class="col s4 m3 ">
+<div class="col s12 m3 ">
   <div class="card-panel rad w3-hover-opacity w3-hover-light">
     <span class="deep-purple-text text-darken-3"><i class="material-icons center">phone_in_talk</i> CS 24jam
   <br><sup>Keluhanmu akan tertangani secara 24jam dengan CS handal kami</sup></span>
       </div>
     </div>
-<div class="col s4 m3">
+<div class="col s12 m3">
   <div class="card-panel rad w3-hover-opacity w3-hover-light">
     <span class="deep-purple-text text-darken-3"><i class="material-icons center">verified_user</i> Perlindungan 
   <br><sup>Dengan Perlindungan Barang dan Penjual Yang Terverifikasi</sup></span>
       </div>
     </div>
-<div class="col s4 m3">
+<div class="col s12 m3">
   <div class="card-panel rad w3-hover-opacity w3-hover-light">
     <span class="deep-purple-text text-darken-3"><i class="material-icons center">money_off</i> Penuh Diskon
   <br><sup>Barang Dengan Penuh Promo dan Diskon Untukmu</sup></span>
@@ -246,7 +269,7 @@
   <div class="section">
     <div class="row">
       <div class="col s12 m12">
-        <div class="card-panel hoverable image-2 image-landings rads"> 
+        <div class="card-panel hoverable image-2 image-landings rads sale"> 
           <div class="diskonkok">
           <div class="valign-wrapper">
             <h4 class="red-text text-lighten-3">20% off</h4>
@@ -409,7 +432,7 @@
 
 
   <section class="partner-area">
-              <div class ="row">
+              <div class ="row trusted-mobile">
                   <div class="col l2 m4 s12" style="margin-top: 40px;">
                      <h6 class="white-text"><b>TRUSTED BY</b></h6>
                   </div>
@@ -436,9 +459,8 @@
           <div class="container">
           <div data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="300" data-aos-offset="0">
       <h1 class="headings w3-hover-sepia">Team</h1>
-      <div class="container">
         <div class="row">
-          <div class="col m4 s12">
+          <div class="col m4 s12 team">
             <div data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="300" data-aos-offset="0">
               <div class="cards">
                 <img src="https://source.unsplash.com/9R-CH7PR150" alt="" class="card-imgs">
@@ -456,7 +478,7 @@
             </div>
           </div>
   
-          <div class="col m4 s12">
+          <div class="col m4 s12 team">
             <div data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="300" data-aos-offset="0">
               <div class="cards">
                 <img src="https://source.unsplash.com/9R-CH7PR150" alt="" class="card-imgs">
@@ -474,7 +496,7 @@
             </div>
           </div>
   
-          <div class="col m4 s12">
+          <div class="col m4 s12 team">
             <div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
               <div class="cards">
                 <img src="https://source.unsplash.com/9R-CH7PR150" alt="" class="card-imgs">
@@ -492,7 +514,6 @@
             </div>
           </div>
         </div>
-      </div>
       
       <div class="card-wrappers" > 
       
@@ -501,7 +522,7 @@
     </div>
     </div>
     </div>
-
+    
       <section id="contact" class="contact scrollspy card" >
         <div data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="300" data-aos-offset="0">
           <h2 class="headings w3-hover-sepia">Contact Us</h2>
@@ -532,7 +553,7 @@
         <img class="catPicture" src="https://static.pexels.com/photos/62640/pexels-photo-62640.jpeg" />
       </div>
       <div class="carousel-item" href="#">
-        <img class="catPicture" src="https://static.pexels.com/photos/60224/pexels-photo-60224.jpeg" />
+        <img class="catPicture" src="https://static.pexels.com/photos/62640/pexels-photo-62640.jpeg" />
       </div>
       <div class="carousel-item" href="#">
         <img class="catPicture" src="https://static.pexels.com/photos/20787/pexels-photo.jpg" />
@@ -557,6 +578,11 @@
     AOS.init();
   </script>
   <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      var elems = document.querySelectorAll('.sidenav');
+      var instances = M.Sidenav.init(elems);
+      console.log('asda');
+    });
     const materialbox = document.querySelectorAll('.materialboxed');
         M.Materialbox.init(materialbox);
         $(document).ready(function(){
