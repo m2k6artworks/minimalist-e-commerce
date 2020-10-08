@@ -74,31 +74,27 @@ priceRange.addEventListener("input", (e) => {
   priceRangeOutput.value = `$ ${e.target.value - 5} - $ ${e.target.value}`;
 });
 
-const carouselCategoryElems = qselect('.carousel.carousel-slider.carousel-category')
+let slider = tns({
+  container: '.my-slider',
+  items: 6.1,
+  hasControls: false,
+  prevButton: ".prev-arrow",
+  nextButton: ".next-arrow",
+  nav: false,
+  slideBy: 1,
+  mouseDrag: true,
+  loop: false,
+  responsive: {
+    300: {
+      items: 3.2
+    },
+    900: {
+      items: 6.2
+    }
+  }
+});
 
-document.addEventListener('DOMContentLoaded', () => {
-  const carouselInstance = M.Carousel.init(carouselCategoryElems, {
-      duration: 300,
-      fullWidth: true,
-      indicators: false
-  }, true, true)
-})
-
-//next button
-const rightBtn = qselect('.moveRightCarousel')
-rightBtn.addEventListener("click", event => {
-  const moveRight = M.Carousel.getInstance(carouselCategoryElems)
-  moveRight.next(1)
-})
-
-//prev button
-const leftBtn = qselect('.moveLeftCarousel')
-leftBtn.addEventListener("click", event => {
-  const moveLeft = M.Carousel.getInstance(carouselCategoryElems)
-  moveLeft.prev(1)
-})
-
-const categoryCard = qselect('.carousel-category .carousel-item .card', true)
+const categoryCard = qselect('.my-slider .card', true)
 categoryCard.forEach(catBtn => {
   catBtn.addEventListener("click", event => {
     categoryCard.forEach(catBtns => {
@@ -112,14 +108,11 @@ const favoriteBtn = qselect('.stuff-section .btn-floating i', true)
 favoriteBtn.forEach(favBtn => {
   favBtn.addEventListener("click", event => {
     if (favBtn.classList.contains('liked')) {
-      // favBtn.style.transition = ".2s ease-out";
       favBtn.classList.remove('zoom-anim')
       void event.target.offsetWidth;
       favBtn.classList.remove('liked')
       favBtn.classList.add('zoom-anim')
-    }
-    else {
-      // favBtn.style.transition = ".2s ease-out";
+    } else {
       favBtn.classList.add('liked')
       favBtn.classList.remove('zoom-anim')
       void event.target.offsetWidth;

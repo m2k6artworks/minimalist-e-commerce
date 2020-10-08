@@ -437,32 +437,35 @@ a.middle-indicator-text {
 
 .category-slider {
   margin: 2.5rem;
+  position: relative;
 }
 
-.carousel-category {
+.next-arrow {
+  right: 0;
+}
+
+/* .carousel-category {
   height: 300px !important;
-}
+} */
 
-.carousel-category .carousel-item,
-.carousel-category .carousel-item .col {
+.my-slider .col {
   display: flex;
   min-height: 0 !important;
   height: auto;
 }
 
-.carousel-category .carousel-item .card,
-.carousel-category .carousel-item .col  {
+/* .my-slider .card, */
+.my-slider .col  {
   margin: auto;
-  z-index: 99;
 }
 
-.carousel-category .carousel-item .card-active {
+.my-slider .card-active {
   border: 5px solid var(--orange-primary) !important;
   background-color: var(--orange-secondary) !important;
   transition: var(--trans-cubic);
 }
 
-.carousel-category .carousel-item .card {
+.my-slider .card {
   border-radius: 200px;
   overflow: hidden;
   padding-top: 2rem;
@@ -473,7 +476,11 @@ a.middle-indicator-text {
   transition: var(--trans-cubic);
 }
 
-.carousel-category .carousel-item .card img {
+.my-slider .card-title {
+  font-size: 2vmax;
+}
+
+.my-slider .card img {
   clip-path: circle();
 }
 
@@ -552,3 +559,23 @@ a.middle-indicator-text {
 }
 
 /* end stuff section  */
+
+
+
+/* responsive */
+
+@media only screen and (max-width: 600px) {
+  :root {
+    font-size: 13px;
+  }
+
+  .promote-section {
+    display: none;
+  }
+
+  .category-slider {
+    margin: 1.5rem;
+  }
+
+
+}
