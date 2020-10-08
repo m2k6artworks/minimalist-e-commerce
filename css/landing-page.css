@@ -312,7 +312,7 @@ nav {
 }
 
 nav .left, nav .right {
-  margin: .5rem 1.5rem;
+  /* margin: .5rem 1.5rem; */
   padding: 0;
 }
 
@@ -338,6 +338,10 @@ nav .input-field {
 
 .nav-wrapper .search-location {
   width: 15%;
+}
+
+.stuff {
+  padding: .6em;
 }
 
 .nav-wrapper .search-stuff {
