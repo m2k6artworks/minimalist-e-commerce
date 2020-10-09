@@ -12,74 +12,85 @@
   <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 </head>
 <body>
-  <nav class="grey lighten-5" role="navigation">
-    <div class="nav-wrapper">
-      <a id="logo-container" href="#" class="left brand-logo grey-text text-darken-4 text-bold">G</a>
-      <!-- <ul class="left hide-on-med-and-down">
-        <li><a id="logo-container" href="#" class="grey-text text-darken-4">G</a></li>
-      </ul> -->
-      <ul class="left hide-on-med-and-down search-location">
-        <li>
-        <form action="" method="post" class="location">
-          <div class="input-field">
-              <input id="search" type="search" name="search" placeholder="Cari Lokasi">
-              <label class="label-icon" for="search"><i class="material-icons">search</i></label>
-          </div>
-        </form>
-        </li>
-      </ul>
-      <ul class="left hide-on-med-and-down search-stuff">
-        <li>
-        <form action="" method="post" class="stuff">
-          <div class="input-field">
-              <input id="search" type="search" name="search" placeholder="Cari Barang">
-              <label class="label-icon" for="search"><i class="material-icons">search</i></label>
-          </div>
-        </form>
-        </li>
-      </ul>
-      <ul class="left hide-on-med-and-down">
-        <li>
-          <a class="waves-effect waves-dark btn-large grey lighten-5 grey-text text-darken-4"><i class="large material-icons left grey darken-4 grey-text text-lighten-5">add</i>Jual</a>
-        </li>
-      </ul>
-      <ul class="right hide-on-med-and-down">
-        <li>
-          <i class="material-icons grey-text text-darken-5">account_circle</i>
-        </li>
-      </ul>
-      <ul class="right hide-on-med-and-down">
-        <li>
-          <i class="material-icons grey-text text-darken-5">favorite</i>
-        </li>
-      </ul>
-      <ul class="right hide-on-med-and-down">
-        <li>
-          <i class="material-icons grey-text text-darken-5">message</i>
-        </li>
-      </ul>
-      <ul id="nav-mobile" class="sidenav">
-        <li>
-          <form action="" method="post" class="stuff">
-            <div class="input-field">
-                <input id="search" type="search" name="search" placeholder="Cari Barang">
-                <label class="label-icon" for="search"><i class="material-icons">search</i></label>
-            </div>
-          </form>
-        </li>
-        <li>
-          <a class="waves-effect waves-dark btn-large grey lighten-5 grey-text text-darken-4"><i class="large material-icons left grey darken-4 grey-text text-lighten-5">add</i>Jual</a>
-        </li>
-      </ul>
-      <!-- <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a> -->
+
+  <!-- <div class="nav-bg-mobile hide-on-med-and-up"></div> -->
+
+  <!-- grey lighten-5 -->
+  <nav class="" role="navigation">
+    <div class="nav-wrapper disflex row">
+      <div class="col s8 disflex m-auto hide-on-small-and-down left-align">
+        <div class="row w-100 disflex m-auto left-align">
+          <a id="logo-container" href="#" class="m-auto col s1 w-100 brand-logo grey-text text-darken-4 text-bold">G</a>
+          <ul class="m-auto col s3 search-location">
+            <li class="w-100">
+            <form action="" method="post" class="location">
+              <div class="input-field">
+                  <input id="search" type="search" name="search" placeholder="Cari Lokasi">
+                  <label class="label-icon" for="search"><i class="material-icons">search</i></label>
+              </div>
+            </form>
+            </li>
+          </ul>
+          <ul class="m-auto col s5 search-stuff">
+            <li class="w-100">
+            <form action="" method="post" class="stuff">
+              <div class="input-field">
+                  <input id="search" type="search" name="search" placeholder="Cari Barang">
+                  <label class="label-icon" for="search"><i class="material-icons">search</i></label>
+              </div>
+            </form>
+            </li>
+          </ul>
+          <ul class="m-auto col s3">
+            <li class="w-100 disflex">
+              <a class="m-auto waves-effect waves-dark btn-large grey lighten-5 grey-text text-darken-4"><i class="large material-icons left grey darken-4 grey-text text-lighten-5">add</i>Jual</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="col s4 disflex m-auto hide-on-small-and-down right-align">
+        <div class="row m-auto w-100">
+          <ul class="right col s3">
+            <li class="w-100">
+              <i class="material-icons grey-text text-darken-5">account_circle</i>
+            </li>
+          </ul>
+          <ul class="right col s3">
+            <li class="w-100">
+              <i class="material-icons grey-text text-darken-5">favorite</i>
+            </li>
+          </ul>
+          <ul class="right col s3">
+            <li class="w-100">
+              <i class="material-icons grey-text text-darken-5">message</i>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div id="nav-item-mobile" class="col s12 disflex m-auto hide-on-med-and-up">
+        <div class="row w-100 disflex m-auto center">
+          <a id="logo-container" href="#" class="m-auto col s2 w-100 brand-logo grey-text text-darken-4 text-bold">G</a>
+          <ul class="m-auto col s5 search-stuff">
+            <li class="w-100">
+            <form action="" method="post" class="stuff">
+              <div class="input-field">
+                  <input id="search" type="search" name="search" placeholder="Cari Barang">
+                  <label class="label-icon" for="search"><i class="material-icons">search</i></label>
+              </div>
+            </form>
+            </li>
+          </ul>
+          <ul class="m-auto col s5">
+            <li class="w-100 disflex">
+              <a class="m-auto waves-effect waves-dark btn-flat grey lighten-5 grey-text text-darken-4"><i class="large material-icons left grey-text text-darken-5">add</i>Jual</a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </div>
   </nav>
 
   <ul id="slide-out" class="sidenav">
-    <!-- <li><a href="#!"><i class="material-icons">cloud</i>First Link With Icon</a></li>
-    <li><a href="#!">Second Link</a></li>
-    <li><a class="subheader">Subheader</a></li>
-    <li><a class="waves-effect" href="#!">Third Link With Waves</a></li> -->
     <div class="sideTriggerBtn">
       <a href="#" data-target="slide-out" class="waves-effect waves-dark btn-large grey lighten-5 grey-text text-darken-4 sidenav-trigger">&nbsp;<i class="material-icons">shopping_cart</i> Cart </a>
     </div>
@@ -184,7 +195,7 @@
     </div>
   <!-- </div> -->
 
-  <div class="promote-section">
+  <div class="promote-section hide-on-small-and-down">
     <div class="row">
       <div class="col s12 promote-header center"> 
         Buy 1 Get 1 From Zyata Studio
@@ -208,35 +219,62 @@
 
 
   <div class="category-section">
-    <div class="row">
-      <div class="col s12 left-align">
-        <h4>Items</h4>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col s6 left-align">
-        <div class="items-btn">
-          <div class="switch">
-            <label>
-              <input type="checkbox" id="switchToggle">
-              <span class="lever"></span>
-              <span class="options first-opt"> Best Sellers </span>
-              <span class="options second-opt"> Newest </span>
-            </label>
+    <div class="row disflex">
+      <div class="col s6 m-auto">
+        <div class="row left-align m-auto">
+          <div class="col s12 m-auto">
+            <h5 class="w-100">Items</h5>
+          </div>
+          <div class="col s12 m8 l6 m-auto">
+            <div class="items-btn">
+              <div class="switch disflex">
+                <label class="disflex m-auto">
+                  <input type="checkbox" id="switchToggle">
+                  <span class="lever"></span>
+                  <span class="options first-opt"> Best Sellers </span>
+                  <span class="options second-opt"> Newest </span>
+                </label>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-      <div class="col s6 right-align price-range">
-        <div class="row">
-          <div class="col s6">
-            <h4> Price Range <output for="range" class="output">$45 - $50</output> </h4>
+      <div class="col s6 m-auto">
+        <div class="row right-align m-auto">
+          <div class="col s12 m12 l6 m-auto">
+            <h5 class="w-100"> Price Range <output for="range" class="output">$45 - $50</output> </h5>
           </div>
-          <div class="col s6">
+          <div class="col s12 m12 l6 m-auto">
             <div class="range-bar"><input id="price-range" type="range" min="5" max="100" value="50" step="5"></div>            
           </div>
         </div>
       </div>
     </div>
+    <!-- <div class="row disflex">
+      <div class="col s6 m-auto left-align">
+        <div class="row disflex m-auto">
+          <div class="col s12 m-auto left-align">
+            <div class="items-btn">
+              <div class="switch">
+                <label>
+                  <input type="checkbox" id="switchToggle">
+                  <span class="lever"></span>
+                  <span class="options first-opt"> Best Sellers </span>
+                  <span class="options second-opt"> Newest </span>
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col s6 m-auto right-align price-range">
+        <div class="row disflex m-auto">
+          <div class="col s12 m-auto left-align">
+            <div class="range-bar"><input id="price-range" type="range" min="5" max="100" value="50" step="5"></div>            
+          </div>
+        </div>
+      </div>
+    </div> -->
   </div>
 
   <div class="category-slider">
