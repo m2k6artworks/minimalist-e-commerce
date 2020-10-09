@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.3/tiny-slider.css">
+    <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <link href="css/single-product.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+</head>
+<body>
+    <nav class="purple" role="navigation">
+    <div class="nav-wrapper">
+      <a id="logo-container" href="#" class="left brand-logo grey-text text-darken-4 text-bold">G</a>
+      <ul class="left hide-on-med-and-down search-location">
+        <li>
+        <form action="" method="post" class="location">
+          <div class="input-field">
+              <input id="search" type="search" name="search" placeholder="Cari Lokasi">
+              <label class="label-icon" for="search"><i class="material-icons">search</i></label>
+          </div>
+        </form>
+        </li>
+      </ul>
+      <ul class="left hide-on-med-and-down search-stuff">
+        <li>
+        <form action="" method="post" class="stuff">
+          <div class="input-field">
+              <input id="search" type="search" name="search" placeholder="Cari Barang">
+              <label class="label-icon" for="search"><i class="material-icons">search</i></label>
+          </div>
+        </form>
+        </li>
+      </ul>
+      <ul class="left hide-on-med-and-down">
+        <li>
+          <a class="waves-effect waves-dark btn-large grey lighten-5 grey-text text-darken-4"><i class="material-icons left grey darken-4 grey-text text-lighten-5">add</i>Jual</a>
+        </li>
+      </ul>
+      <ul class="right hide-on-med-and-down">
+        <li>
+          <i class="material-icons grey-text text-darken-5" style="float: left;">account_circle</i><a href="#" class="dropdown-trigger noHover" data-target='dropdown1'><i class="material-icons right arrowNav">arrow_drop_down</i></a>
+          <!-- <a class='dropdown-trigger btn' href='#' data-target='dropdown1'>Drop Me!</a> -->
+        </li>
+      </ul>
+      <ul class="right hide-on-med-and-down">
+        <li>
+          <i class="material-icons grey-text text-darken-5">message</i>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <!-- Dropdown Structure -->
+  <ul id='dropdown1' class='dropdown-content userInfo'>
+    <li><a href="#!"><i class="material-icons">person_outline</i>Profile</a></li>
+    <li><a href="#!"><i class="material-icons">chat_bubble_outline</i>Chat</a></li>
+    <li><a href="#!"><i class="material-icons">help_outline</i>Help</a></li>
+    <li class="divider" tabindex="-1"></li>
+    <li><a href="#!"><i class="material-icons">lock_outline</i>Lock</a></li>
+    <li><a href="#!"><i class="material-icons">keyboard_tab</i>Logout</a></li>
+  </ul>
+  
+    <br>
+    <div class="container">
+        <div class="section">
+            <div class="row">
+                <div class="col m4 s12">
+                    <div class="title center">
+                        <h5><b>GET THE EXCLUSIVE PRODUCT NOW</b></h5>
+                    </div>
+                    <div class="description center">
+                        <h6>The Best Product for You</h6>
+                        <h6>The Best Product for You</h6>
+                        <h6>The Best Product for You</h6>
+                        <h6>The Best Product for You</h6>
+                    </div><br>
+                    <div class="image-slide center">
+                        <label class="first-color" for="color-1">
+                            <input class=" color-btn for-color-1" type="radio" id="color-1" name="color-btn"/>
+                        </label> 
+                        <label class="color-2" for="color-2">
+                            <input class=" color-btn for-color-2" type="radio" id="color-2" name="color-btn"/>
+                        </label> 
+                        <label class="color-3" for="color-3">
+                            <input class=" color-btn for-color-3" type="radio" id="color-3" name="color-btn"/>
+                        </label> 
+                        <label class="color-4" for="color-4">
+                            <input class=" color-btn for-color-4" type="radio" id="color-4" name="color-btn"/>
+                        </label> 
+                        <label class="color-5" for="color-5">
+                            <input class=" color-btn for-color-5" type="radio" id="color-5" name="color-btn"/>
+                        </label> 
+                        <label class="color-6" for="color-6">
+                            <input class=" color-btn for-color-6" type="radio" id="color-6" name="color-btn"/>
+                        </label> 
+                    </div><br>
+                    <div class="text-price center bold">
+                        <div class="text">
+                            <h6><b>Limited Time Offer</b></h6>
+                        </div>
+                        <div class="price">
+                            <h6><b>$299.95</b></h6>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="submit-btn center">
+                        <a class="waves-effect waves-light btn-large buynow"><i class="material-icons left">shopping_basket</i>button</a><br><br>
+                        <a class="waves-effect waves-light btn-large wishlist"><i class="material-icons left">favorite</i>button</a>
+                    </div>
+
+                </div>
+                <div class="col m8 s12">
+                    <div class="img-product">
+                        <img class="img-active" data-name='color-1' src="img/567638.png" alt="gambar">    
+                        <img class="img-inactive" data-name='color-2' src="img/default.jpg" alt="gambar">    
+                        <img class="img-inactive" data-name='color-3' src="img/sws1.png" alt="gambar">    
+                        <img class="img-inactive" data-name='color-4' src="img/partner5.png" alt="gambar">    
+                        <img class="img-inactive" data-name='color-5' src="img/no-img.png" alt="gambar">    
+                        <img class="img-inactive" data-name='color-6' src="img/partner1.png" alt="gambar">    
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script>
+        $(function(){
+            $('input[type="radio"]').click(function(){
+                if ($(this).is(':checked')) {
+                    $("body").attr('class', '');
+                    $("body").addClass($(this).attr('id'),1000);
+                    $("label").css("border-color", "transparent");
+                    $("label[for='"+ $(this).attr('id') +"']").css("border-color", "#434343");
+                    $("img").animate({ opacity: '0' }, 100);
+                    $("img[data-name='"+ $(this).attr('id') +"']").animate({ opacity: '1' }, 500);
+                }
+            });
+        });
+    </script>
+</body>
+</html>
