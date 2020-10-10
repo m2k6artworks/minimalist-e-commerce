@@ -20,3 +20,9 @@
 - `https://tobiasahlin.com/blog/move-from-jquery-to-vanilla-javascript/#network-requests-with-get-or-ajax`
 - `https://medium.com/@josephcardillo/arrow-functions-and-this-in-es6-4f1d350a85cf`
 - `https://www.30secondsofcode.org/blog/s/javascript-arrow-function-event-listeners`
+# Dashboard
+- `https://www.behance.net/gallery/104858993/Management-Dashboard?tracking_source=search_projects_recommended%7Cdashboard%20admin%20panel`
+- `https://www.behance.net/gallery/104237623/Management-Dashboard?tracking_source=search_projects_recommended%7Cdashboard%20admin%20panel`
+- `https://dribbble.com/shots/10990583-UGEM-Marketplace-Dashboard`
+- `https://dribbble.com/shots/14139006-Debank-Bank-Dashboard-Design`
+- `https://dribbble.com/shots/14109757-Banking-Dashboard`
