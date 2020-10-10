@@ -249,7 +249,10 @@ nav .input-field {
 .iklan-product .log-product {
   border-radius: 40px;
   padding: 1px 10px;
-  border: 1px solid black;
+  box-shadow: -4px 6px 10px 0px #ffb987;
+  background-color: #fafafa;
+  border: 1px solid #f17318;
+  color: #ff6b00;
 }
 
 .iklan-product i{
@@ -266,7 +269,8 @@ nav .input-field {
   border: 1px solid black;
   padding: 10px;
   margin-top: 20%;
-  width: 20%;
+  width: 100px;
+  text-align: center;
 }
 
 .iklan-product .price {
@@ -291,5 +295,16 @@ nav .input-field {
 @media only screen and (min-width: 993px){
   .container {
       width: 75%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .category-iklan div{
+    padding: 0 !important;
+  }
+
+  .stock {
+    margin:10px auto;
+    
   }
 }
