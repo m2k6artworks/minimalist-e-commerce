@@ -171,6 +171,50 @@ nav .input-field {
 
 /* end nav */
 
+/* start carousel slider */
+
+.carousel .middle-indicator {
+  z-index: 1;
+}
+
+.carousel .arrow-right {
+  right: 0 !important;
+}
+
+.carousel-item {
+  display: flex;
+}
+
+.carousel-item .carousel-caption {
+  margin: auto;
+}
+
+.middle-indicator {
+  position:absolute;
+  top:45%;
+}
+
+.middle-indicator-text {font-size: 5vmax;}
+
+.content-indicator {
+  width: 4vmax;
+  height: 4vmax;
+  background: none;
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  border-radius: 0; 
+}
+
+a.middle-indicator-text {
+  color: var(--text-primary);
+}
+ 
+/* .indicators {
+  visibility: hidden;
+} */
+
+/* end carousel slider */
+
 .image-slide label {
     display: inline-block;
     height: 40px;
