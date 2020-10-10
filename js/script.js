@@ -76,7 +76,7 @@ priceRange.addEventListener("input", (e) => {
 
 let slider = tns({
   container: '.my-slider',
-  items: 6.1,
+  items: 6,
   hasControls: false,
   prevButton: ".prev-arrow",
   nextButton: ".next-arrow",
@@ -85,11 +85,20 @@ let slider = tns({
   mouseDrag: true,
   loop: false,
   responsive: {
-    300: {
-      items: 3.2
+    200:{
+      items: 2
+    },
+    350: {
+      items: 3
+    },
+    600: {
+      items: 4
     },
     900: {
-      items: 6.2
+      items: 5
+    },
+    1200: {
+      items: 6
     }
   }
 });
