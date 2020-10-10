@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0"/>
   <title>E-Commerce By Discover Team</title>
 
   <!-- CSS  -->
@@ -157,6 +157,7 @@
       </div>
     </li>
   </ul>
+
     <div class="carousel carousel-slider carousel-banner center " data-indicators="true">
       <div class="middle-indicator left">
         <a href="#prev" class="movePrevCarousel middle-indicator-text content-indicator"><i class="material-icons middle-indicator-text text-bold">chevron_left</i></a>
@@ -433,11 +434,72 @@
     </div>
   </div>
 
-  <div class="cart-mobile hide-on-med-and-up">
-    <div class="row disflex m-auto">
-      <div class="col s4 disflex m-auto">2 product</div>
-      <div class="col s6 disflex m-auto">Total : $3.4</div>
-      <div class="col s2 disflex m-auto"><i class="material-icons">shopping-cart</i></div>
+  <div class="cart-mobile hide-on-med-and-up cart-mobile-expand">
+    <div class="row m-auto disflex center cart-mobile-thumbnail">
+      <div class="col s4 m-auto ">2 product</div>
+      <div class="col s6 m-auto">Total : $3.4</div>
+      <div id="triggerCartM" class="col s2 m-auto"><i class="material-icons">keyboard_capslock</i></div>
+    </div>
+    <div class="row disflex cart-mobile-content">
+      <div class="w-100 location-view">
+        <div class="row center">
+          <div class="col s6">Jl Arjuna No..</div>
+          <div class="col s6"><a href="#edit"><span class="">Edit</span></a></div>
+        </div>
+        <div class="row center">
+          <div class="col s6"><i class="material-icons">access_time</i> 35 min</div>
+          <div class="col s6"><a href="#edit"><span class="">Choose time</span></a></div>
+        </div>
+      </div>
+    </div>
+    <div class="row disflex cart-mobile-content">
+      <!-- <div class="disflex row">
+        <b>Order List</b>
+      </div> -->
+      <div class="m-auto col s12 order-list-items">
+        <div class="row disflex center">
+          <div class="col s2 disflex m-auto"><i class="material-icons m-auto">image</i></div>
+          <div class="col s2 m-auto">1x</div>
+          <div class="col s6 left-align m-auto">Es Teh</div>
+          <div class="col s2 m-auto">$0.3</div>
+        </div>
+        <div class="row disflex center">
+          <div class="col s2 disflex m-auto"><i class="material-icons m-auto">image</i></div>
+          <div class="col s2 m-auto">1x</div>
+          <div class="col s6 left-align m-auto">Nasi Pecel</div>
+          <div class="col s2 m-auto">$0.5</div>
+        </div>
+        <div class="row disflex center">
+          <div class="col s2 disflex m-auto"><i class="material-icons m-auto">image</i></div>
+          <div class="col s2 m-auto">2x</div>
+          <div class="col s6 left-align m-auto">Tempe</div>
+          <div class="col s2 m-auto">$0.2</div>
+        </div>
+      </div>
+    </div>
+    <div class="row disflex cart-mobile-content">
+      <div class="w-100 order-total m-auto">
+        <div class="w-100 row disflex center">
+          <div class="col s2 disflex m-auto"><i class="material-icons disflex m-auto">local_shipping</i></div>
+          <div class="col s8 m-auto left-align">Delivery</div>
+          <div class="col s2 m-auto">$0.3</div>
+        </div>
+        <div class="row disflex center">
+          <div class="col s2"></div>
+          <div class="col s8 m-auto left-align">Total : </div>
+          <div class="col s2 m-auto"><b>$0.3</b></div>
+        </div>
+      </div>
+    </div>
+    <div class="row disflex cart-mobile-content">
+      <div class="w-100 order-confirm m-auto">
+        <div class="row disflex right-align">
+          <div class="col s4"></div>
+          <div class="col s8"> <button class="btn waves-effect waves-dark" type="submit" name="action">Checkout
+            <i class="material-icons right">arrow_forward</i>
+          </button> </div>
+        </div>
+      </div>
     </div>
   </div>
 

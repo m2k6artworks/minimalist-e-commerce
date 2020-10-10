@@ -31,6 +31,27 @@ document.addEventListener('DOMContentLoaded', () => {
   })
 })
 
+const cartBtn = qselect('#triggerCartM')
+const cartBtnThumb = qselect('.cart-mobile-content',true)
+
+cartBtn.addEventListener("click", event => {
+  const cartMobile = qselect('.cart-mobile');
+  if (cartMobile.classList.contains('cart-mobile-expand')) {
+    cartMobile.classList.remove('cart-mobile-expand');
+    cartBtnThumb.forEach(cartBT => {
+      cartBT.style.display = 'none'
+    })
+    cartBtn.innerHtml = '<i class="material-icons">keyboard_capslock</i>'
+  } else {
+    cartMobile.classList.add('cart-mobile-expand');
+    cartBtn.innerHtml = '<i class="material-icons">cancel</i>';
+    cartBtnThumb.forEach(cartBT => {
+      cartBT.style.display = 'block'
+    })
+  }
+  // cartMobile.style.cssText = "bottom: 0; border-radius: 30% 30% 0 0; padding: 20px; height: 50%; width: 120vw; right: 45px; left: -45px; padding-top: 3rem;"
+})
+
 // const cartBtn = qselect('.sideTriggerBtn')
 // cartBtn.addEventListener("click", event => {
 //   const sideNavClose = M.Carousel.getInstance(sideNavElems)
