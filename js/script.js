@@ -31,31 +31,40 @@ document.addEventListener('DOMContentLoaded', () => {
   })
 })
 
-const cartBtn = qselect('#triggerCartM')
-const cartBtnThumb = qselect('.cart-mobile-content',true)
+const sideNavOverlay = qselect('.sidenav-overlay');
+const cartBtnM = qselect('#triggerCartM')
+const cartBtnIcons = qselect('#triggerCartM .material-icons')
+const cartMobile = qselect('.cart-mobile')
+const cartBtnContent = qselect('.cart-mobile-content',true)
+const cartBtnThumb = qselect('.cart-mobile-thumb',true)
 
-cartBtn.addEventListener("click", event => {
-  const cartMobile = qselect('.cart-mobile');
+cartBtnM.addEventListener("click", event => {
   if (cartMobile.classList.contains('cart-mobile-expand')) {
     cartMobile.classList.remove('cart-mobile-expand');
-    cartBtnThumb.forEach(cartBT => {
-      cartBT.style.display = 'none'
-    })
-    cartBtn.innerHtml = '<i class="material-icons">keyboard_capslock</i>'
+    cartBtnContent.forEach(cartCT => { cartCT.style.display = 'none' })
+    cartBtnThumb.forEach(cartTM => { cartTM.style.display = 'block' })
+    cartBtnM.style.cssText = "position: unset; right: 0; top: 0; transform: rotate(0deg); transition: var(--trans-cubic);"
+    cartBtnIcons.style.cssText = "font-size: 3vmax"
+    // sideNavOverlay.style.display = 'none'
   } else {
     cartMobile.classList.add('cart-mobile-expand');
-    cartBtn.innerHtml = '<i class="material-icons">cancel</i>';
-    cartBtnThumb.forEach(cartBT => {
-      cartBT.style.display = 'block'
-    })
+    cartBtnContent.forEach(cartCT => { cartCT.style.display = 'block' })
+    cartBtnThumb.forEach(cartTM => { cartTM.style.display = 'none' })
+    cartBtnM.style.cssText = "position: absolute; right: 10vw; top: 10vw; transform: rotate(180deg); transition: var(--trans-cubic);"
+    cartBtnIcons.style.cssText = "font-size: 4vmax"
+    // sideNavOverlay.style.display = 'block'
+    // sideNavOverlay.style.cssText = "display: block; z-index: 9; opacity: 1;"
   }
-  // cartMobile.style.cssText = "bottom: 0; border-radius: 30% 30% 0 0; padding: 20px; height: 50%; width: 120vw; right: 45px; left: -45px; padding-top: 3rem;"
 })
 
 // const cartBtn = qselect('.sideTriggerBtn')
 // cartBtn.addEventListener("click", event => {
 //   const sideNavClose = M.Carousel.getInstance(sideNavElems)
-//   sideNavClose.close();
+//   if (sideNavOverlay.style.display = 'block') {
+//     sideNavClose.close();
+//   } else {
+//     sideNavClose.open();
+//   }
 // })
 
 
