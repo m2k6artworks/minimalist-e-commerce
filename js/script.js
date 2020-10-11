@@ -101,7 +101,14 @@ const priceRangeOutput = qselect(".output");
 
 priceRange.addEventListener("input", (e) => {
   e.target.style.background = `linear-gradient(to right, #6558F5 0%, #6558F5 ${e.target.value}%, #fff ${e.target.value}%, #fff 100%)`;
-  priceRangeOutput.value = `$${e.target.value - 5} - $${e.target.value}`;
+  priceRangeOutput.value = `IDR ${e.target.value - 5} - ${e.target.value}`;
+});
+
+var imageZoom = document.querySelectorAll('.materialboxed',true);
+document.addEventListener('DOMContentLoaded', function() {
+  var instances = M.Materialbox.init(imageZoom, {
+    inDuration: 300
+  });
 });
 
 let slider = tns({
