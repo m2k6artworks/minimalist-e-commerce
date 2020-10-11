@@ -13,6 +13,36 @@
     scroll-behavior: smooth;
 }
 
+.disflex {
+  display: flex;
+}
+
+.m-auto {
+  margin: auto !important;
+}
+
+.material-placeholder {
+  margin: auto !important;
+}
+
+.landing-img-1 {
+  background-image: url('../img/manport1.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.landing-img-2 {
+  background-image: url('../img/manport2.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.landing-img-3 {
+  background-image: url('../img/manport4.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
 .login-box {
   width: 100%;
   margin: auto;
@@ -485,14 +515,27 @@ footer .cc ul li,
 }
 
   .image-landing {
-    background-image: url("../img/567638.png");
     background-repeat: no-repeat;
     background-size: cover;
   }
+
+  .image-landing-4 {
+    background-image: url("../img/manport5.jpg");
+  }
+
+  .image-landing-5 {
+    background-image: url("../img/manport7.jpg");
+  }
+
+
   .image-landings {
     background-image: url("https://images.hdqwalls.com/download/anime-cityscape-landscape-scenery-5k-r6-3840x2400.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+  }
+
+  .card-content img {
+    max-height: 210px;
   }
 
   
@@ -1060,7 +1103,7 @@ nav .input-field {
   }
 
   .sale {
-    height: auto;
+    min-height: 700px;
   }
 
   .overflow-x {
