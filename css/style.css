@@ -73,6 +73,32 @@ nav {
   height: 5rem;
 }
 
+.noHover:hover{
+  background-color: none;
+}
+
+.arrowNav {
+  /* margin: 0 !important; */
+  /* position: absolute; */
+  /* right: 10px; */
+  color: var(--text-primary);
+}
+
+ul.select-dropdown,
+ul.dropdown-content {
+  width: auto !important;
+  padding:0;
+}
+
+li > span {
+  white-space: nowrap;
+}
+
+.userInfo {
+  /* margin-left:30px !important;  */
+  top: 5rem !important;
+}
+
 nav .brand-logo {
   position: unset;
 }
@@ -301,7 +327,7 @@ a.middle-indicator-text {
 
 .promote-body .col:first-child img {
   width: 100%;
-  max-height: 12rem;
+  max-height: 15rem;
   margin: auto;
 }
 
@@ -684,7 +710,7 @@ a.middle-indicator-text {
     -webkit-border-radius: 120px;
     border-radius: 120px;
     margin: 2.5rem auto 0 auto;
-    z-index: 2;
+    z-index: 1;
   }
 
   .carousel .carousel-item {
@@ -725,6 +751,11 @@ a.middle-indicator-text {
   }
 
   .nav-wrapper .btn-flat a { margin: auto; }
+
+  ul.dropdown-content a {
+    font-size: 1.5vmax;
+    padding: 10px 12px;
+  }
 
   .category-section,
   .category-slider,
