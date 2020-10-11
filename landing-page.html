@@ -9,6 +9,7 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="css/landing-page.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/aos.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <script src="https://kit.fontawesome.com/27936ba74c.js"></script>
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 </head>
@@ -20,10 +21,10 @@
       <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
 
       <ul class="left hide-on-med-and-down">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Shop</a></li>
-        <li><a href="#">About Us</a></li>
-        <li><a href="#">Contact Us</a></li>
+        <li><a href="landing-page.html">Home</a></li>
+        <li><a href="index.html">Shop</a></li>
+        <li><a href="#tim">About Us</a></li>
+        <li><a href="#kontak">Contact Us</a></li>
       </ul>
 
       <ul class="right hide-on-med-and-down search-stuff">
@@ -40,10 +41,17 @@
   </nav>
 
   <ul class="sidenav" id="mobile-demo">
+<<<<<<< HEAD
     <li><a href="#">Home</a></li>
     <li><a href="#">Shop</a></li>
     <li><a href="#">Iklan</a></li>
     <li><a href="#">Wishlist</a></li>
+=======
+    <li><a href="landing-page.html">Home</a></li>
+    <li><a href="index.html">Shop</a></li>
+    <li><a href=".tim">About Us</a></li>
+    <li><a href=".kontak">Contact Us</a></li>
+>>>>>>> adbd7a3c63a2c83440b853d7a514fe5898c39c52
   </ul>
 
   <div class="section no-pad-bot" id="index-banner">
@@ -202,30 +210,30 @@
   <div class="container">
     <div class="section">
       <div class="row ">
-        <div class="col s12 m3">
-          <div class="card-panel rad w3-hover-opacity w3-hover-light">
-            <span class="deep-purple-text text-darken-3"><i class="material-icons center">flight_land</i> Gratis Ongkir
+        <div class="col s12 m3 ">
+          <div class="card-panel  radss w3-hover-opacity">
+            <span class="deep-white-text text-darken-3"><i class="material-icons center">flight_land</i> Gratis Ongkir <br>
             <br><sup>Untukmu Gratis Ongkir Seluruh Indonesia Tanpa Biaya Tambahan</sup>
           </div>
         </div>
 
         <div class="col s12 m3 ">
-          <div class="card-panel rad w3-hover-opacity w3-hover-light">
-            <span class="deep-purple-text text-darken-3"><i class="material-icons center">phone_in_talk</i> CS 24jam
+          <div class="card-panel radss w3-hover-opacity w3-hover-light">
+            <span class="deep-white-text text-darken-3"><i class="material-icons center">phone_in_talk</i> CS 24jam <br>
             <sup>Keluhanmu akan tertangani secara 24jam dengan CS handal kami</sup></span>
           </div>
         </div>
 
         <div class="col s12 m3">
-          <div class="card-panel rad w3-hover-opacity w3-hover-light">
-            <span class="deep-purple-text text-darken-3"><i class="material-icons center">verified_user</i> Perlindungan 
+          <div class="card-panel radss w3-hover-opacity w3-hover-light">
+            <span class="deep-white-text text-darken-3"><i class="material-icons center">verified_user</i> Perlindungan <br>
             <sup>Dengan Perlindungan Barang dan Penjual Yang Terverifikasi</sup></span>
           </div>
         </div>
 
       <div class="col s12 m3">
-        <div class="card-panel rad w3-hover-opacity w3-hover-light">
-          <span class="deep-purple-text text-darken-3"><i class="material-icons center">money_off</i> Penuh Diskon
+        <div class="card-panel radss w3-hover-opacity w3-hover-light">
+          <span class="deep-white-text text-darken-3"><i class="material-icons center">money_off</i> Penuh Diskon <br>
           <sup>Barang Dengan Penuh Promo dan Diskon Untukmu</sup></span>
         </div>
       </div>
@@ -238,17 +246,19 @@
         <div class="row">
           <div class="col s12 m12">
             <div class="card-panel hoverable image-2 image-landings rads sale"> 
-              <div class="diskonkok">
+              <div class="diskonkok" data-aos="zoom-in-up">
                 <div class="valign-wrapper">
                   <h4 class="red-text text-lighten-3">20% off</h4>
                 </div>
+              
               <div class="valign-wrapper left">
                 <h1><b>FINE SMILE</b></h1>
               </div>
+            </div>
               <div class="valign-wrapper">
-                <img src="img/sws1.png" class="product-imgs">
+                <img src="img/sws1.png"  data-aos="zoom-in-down" class="product-imgs">
               </div>
-              <div class="valign-wrapper right atasin">
+              <div class="valign-wrapper right atasin" data-aos="zoom-in-right">
                 <ul>
                   <li><h4>Best Choose</h4></li>
                   <li><p><h1><b> Summer Sale </b></h1></p></li>
@@ -262,7 +272,7 @@
         </div>
       </div>
     </div>
-  </div>
+  
 
     <div class="container">
       <div data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="300" data-aos-offset="0">
@@ -422,7 +432,7 @@
           </section>
   
             <!-- revisi karena harusnya sejajar -->
-      <div class="container">
+      <div class="container tim">
           <div data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="300" data-aos-offset="0">
             <h1 class="headings w3-hover-sepia">Team</h1>
           <div class="row">
@@ -479,7 +489,7 @@
             </div>
           </div>
         </div>
-        <div class="card-wrappers" > 
+        <div class="card-wrappers kontak" > 
         </div>
     </div>
   </div>
@@ -491,7 +501,7 @@
             <div class="row">
                 <div class="col m4 s12">
                     <div class="login-box">
-                        <div class="login-snip"> <input id="tab-1" type="radio" name="tab" class="lapor" checked><label for="tab-1" class="tab">Lapor Kendala</label> <input id="tab-2" type="radio" name="tab" class="subs"><label for="tab-2" class="tab">Subscribe</label>
+                        <div class="login-snip" > <input id="tab-1" type="radio" name="tab" class="lapor" checked><label for="tab-1" class="tab">Lapor Kendala</label> <input id="tab-2" type="radio" name="tab" class="subs"><label for="tab-2" class="tab">Subscribe</label>
                             <div class="login-space">
                                 <div class="login">
                                     <div class="group"> <label for="user" class="label">Nama</label> <input id="user" type="text" class="input" placeholder="Masukkan Nama"> </div>
@@ -591,6 +601,7 @@
   <script src="js/materialize.js"></script>
   <script src="js/init.js"></script>
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script src="js/aos.js"></script>
   <script>
     AOS.init();
   </script>

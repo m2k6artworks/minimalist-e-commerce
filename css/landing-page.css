@@ -914,12 +914,17 @@ nav .input-field {
 }
 
 .diskonkok{
-  margin-top: 100px;
+  margin-top: 50px;
   margin-left: 100px;
 }
 
 .rads{
   border-radius: 70px !important;
+}
+.radss{
+  border-radius: 30px !important;
+  background-image: url(https://img.okezone.com/content/2020/09/03/406/2272312/semua-jalur-pendakian-gunung-prau-kembali-dibuka-ZGLNSYvS3R.jpg);
+  color: wheat;
 }
 
 .rad-product {
