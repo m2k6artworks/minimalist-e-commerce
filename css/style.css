@@ -265,6 +265,27 @@ nav .input-field {
   display: flex;
 }
 
+.carousel .carousel-item[href="#one!"] {
+  background-image: url('../img/manport1.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.carousel .carousel-item[href="#two!"] {
+  background-image: url('../img/manport2.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.carousel .carousel-item[href="#three!"] {
+  background-image: url('../img/manport4.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 .carousel-item .carousel-caption {
   margin: auto;
 }
@@ -719,24 +740,6 @@ a.middle-indicator-text {
     -moz-border-radius: 120px;
     -webkit-border-radius: 120px;
     border-radius: 120px;
-  }
-
-  .landing-img-1 {
-    background-image: url('../img/manport1.jpg');
-    background-size: cover;
-    background-position: center;
-  }
-  
-  .landing-img-2 {
-    background-image: url('../img/manport2.jpg');
-    background-size: cover;
-    background-position: center;
-  }
-  
-  .landing-img-3 {
-    background-image: url('../img/manport4.jpg');
-    background-size: cover;
-    background-position: center;
   }
 
   .nav-bg-mobile {
