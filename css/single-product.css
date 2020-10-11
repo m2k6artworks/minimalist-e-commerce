@@ -254,6 +254,10 @@ label.color-6{
     color: #6558f5;
 }
 
+.margin-mobile {
+  margin: 0.7666666667rem 0 0.46rem 0;
+}
+
 .img-product {
     left: 30px;
     position: relative;
