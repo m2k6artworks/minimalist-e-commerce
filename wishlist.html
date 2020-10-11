@@ -9,11 +9,12 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <link href="css/wishlist.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <script src="https://kit.fontawesome.com/27936ba74c.js"></script>
 </head>
 <body>
   <nav class="purple" role="navigation">
     <div class="nav-wrapper">
-      <a id="logo-container" href="#" class="left brand-logo grey-text text-darken-4 text-bold">G</a>
+      <a href="#" data-target="mobile-demo" class="sidenav-trigger" style="margin: 10px;"><i class="material-icons">menu</i></a>
       <ul class="left hide-on-med-and-down search-location">
         <li>
         <form action="" method="post" class="location">
@@ -52,6 +53,13 @@
       </ul>
     </div>
   </nav>
+
+  <ul class="sidenav" id="mobile-demo">
+    <li><a href="#">Home</a></li>
+    <li><a href="#">Shop</a></li>
+    <li><a href="#">Iklan</a></li>
+    <li><a href="#">Wishlist</a></li>
+  </ul>
   <!-- Dropdown Structure -->
   <ul id='dropdown1' class='dropdown-content userInfo'>
     <li><a href="#!"><i class="material-icons">person_outline</i>Profile</a></li>
@@ -67,28 +75,41 @@
   <div class="section no-pad-bot" id="index-banner">
     <div class="container">
       <br><br>
-      <div class="row">
+      <div class="row setting">
         <div class="col s12 m4 category-search">
-          <div class="category" >
-            <a href="#!" class="btn waves-effect waves-light in-active"><span>Iklan</span></a>
-            <a href="#!" class="btn waves-effect waves-light active-btn"><span>Favorit</span></a>
-          </div>
-          <form action="" method="post" class="stuff">
-            <div class="input-field">
-                <input id="search" type="search" name="search" placeholder="Cari Berdasar Judul">
-                <label class="label-icon" for="search"><i class="material-icons">search</i></label>
+          <div class="row">
+            <div class="col s6 m10">
+              <div class="items-btn">
+                <div class="switch disflex">
+                  <label class="disflex m-auto">
+                    <input type="checkbox" id="switchToggle">
+                    <span class="lever"></span>
+                    <span class="options second-opt"> Iklan </span>
+                    <span class="options first-opt"> Favorit </span>
+                  </label>
+                </div>
+              </div>
+            </div> 
+            <div class="col s6 m12">
+              <form action="" method="post" class="stuff">
+                <div class="input-field">
+                    <input id="search" type="search" name="search" placeholder="Cari Berdasar Judul">
+                    <label class="label-icon" for="search"><i class="material-icons">search</i></label>
+                </div>
+              </form>
             </div>
-          </form>
         </div>
-        <div class="col s12 m3">
-          <span class="acc_balance">
-          Account Balance <br>
-          IDR 9.000.000
-        </span>
-        </div>
+        
+        
+      </div>
+      <div class="col s12 m3">
+        <span class="acc_balance">Account Balance</span>
+        <span class="idr">IDR 9.000.000</span>
+      
+      </div>
         <div class="col s12 m5" style="text-align: center;">
-          <div class="col s12 m6"> <span class="iklan-active">Prioritas Tertinggi</span></div>
-          <div class="col s12 m6">Prioritas Terendah</div>
+          <div class="col s6 m6"> <span class="iklan-active">Prioritas Tertinggi</span></div>
+          <div class="col s6 m6">Prioritas Terendah</div>
           <div class="row price-range">
             <div class="col s6">
               <h4> Price Range <output for="range" class="output">$45 - $50</output> </h4>
@@ -254,41 +275,42 @@
   
   
 
-  <footer class="page-footer orange">
+  <footer class="page-footer purple lighten-3">
     <div class="container">
-      <div class="row">
-        <div class="col l6 s12">
-          <h5 class="white-text">Company Bio</h5>
-          <p class="grey-text text-lighten-4">We are a team of college students working on this project like it's our full time job. Any amount would help support and continue development on this project and is greatly appreciated.</p>
-
-
-        </div>
-        <div class="col l3 s12">
-          <h5 class="white-text">Settings</h5>
-          <ul>
-            <li><a class="white-text" href="#!">Link 1</a></li>
-            <li><a class="white-text" href="#!">Link 2</a></li>
-            <li><a class="white-text" href="#!">Link 3</a></li>
-            <li><a class="white-text" href="#!">Link 4</a></li>
+      <div class="row foot-list">
+        <div class="col s12 m6 info">
+          <ul class="left-align">
+            <li class="black-text left-align footer-list">Search</li>
+            <li class="black-text left-align footer-list">Privacy Policy</li>
+            <li class="black-text left-align footer-list">Terms of Use</li>
+            <li class="black-text left-align footer-list">Refund Policy</li>
           </ul>
         </div>
-        <div class="col l3 s12">
-          <h5 class="white-text">Connect</h5>
+        <div class="col s12 m6">
           <ul>
-            <li><a class="white-text" href="#!">Link 1</a></li>
-            <li><a class="white-text" href="#!">Link 2</a></li>
-            <li><a class="white-text" href="#!">Link 3</a></li>
-            <li><a class="white-text" href="#!">Link 4</a></li>
+            <li class="right-align black-text">Created by Discover Team</li>
+          </ul>
+        </div>
+      <div class="row cc">
+        <div class="col s12 m6">
+          <ul>
+            <li><i class="fab fa-cc-visa fa-2x"></i></li>
+            <li><i class="fab fa-cc-discover fa-2x"></i></li> 
+            <li><i class="fab fa-cc-apple-pay fa-2x"></i></li>
+            <li><i class="fab fa-cc-amex fa-2x"></i></li>
+            <li><i class="fab fa-cc-mastercard fa-2x"></i></li>
+          </ul>
+        </div>
+        <div class="col s12 m6">
+          <ul class="right-align">
+            <li class="right-align"><i class="fab fa-facebook-square fa-2x"></i></li>
+            <li class="right-align"><i class="fab fa-instagram fa-2x"></i></li>
           </ul>
         </div>
       </div>
     </div>
-    <div class="footer-copyright">
-      <div class="container">
-      Made by <a class="orange-text text-lighten-3" href="http://materializecss.com">Materialize</a>
-      </div>
-    </div>
-  </footer>
+  </div>
+</footer>
 
 
   <!--  Scripts-->
@@ -296,6 +318,11 @@
   <script src="js/materialize.js"></script>
   <script src="js/wishlist.js"></script>
   <script src="js/init.js"></script>
-
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      var elems = document.querySelectorAll('.sidenav');
+      var instances = M.Sidenav.init(elems);
+    });
+  </script>
   </body>
 </html>
